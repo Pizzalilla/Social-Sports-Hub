@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialSports.Maui.Views.EventsPage"
+             Title="Events">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Reload" Command="{Binding LoadCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto,*" Padding="12">
+        <Label Text="Upcoming games" FontAttributes="Bold" FontSize="20" />
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Events}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="12" Margin="0,8" HasShadow="True">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Title}" FontAttributes="Bold" />
+                            <Label Text="{Binding StartTime}" />
+                            <Label Text="{Binding LocationName}" />
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="{Binding SpotsLeft, StringFormat='Spots left: {0}'}" />
+                                <Button Grid.Column="1" Text="Join" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.JoinCommand}" CommandParameter="{Binding Id}" />
+                            </Grid>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
