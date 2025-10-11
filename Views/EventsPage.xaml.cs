@@ -8,6 +8,6 @@ public partial class EventsPage : ContentPage
         var vm = new ViewModels.EventsViewModel();
         BindingContext = vm;
         // Trigger initial load
-        Task.Run(async () => await MainThread.InvokeOnMainThreadAsync(async () => await vm.LoadCommand.Execute(null)));
+        Task.Run(async () => await MainThread.InvokeOnMainThreadAsync(() => vm.LoadCommand.Execute(null)));
     }
 }

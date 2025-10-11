@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="Social_Sport_Hub.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Social_Sport_Hub"
-    Title="Social_Sport_Hub">
+<Shell x:Class="Social_Sport_Hub.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:Social_Sport_Hub.Views">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <!-- Bottom bar by default on mobile/desktop -->
 
+        <Tab Title="Games" Icon="ic_games.png">
+            <ShellContent>
+                <ContentPage>
+                    <Grid Padding="20">
+                        <Label Text="Games list coming soon…" FontSize="18" />
+                    </Grid>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <!-- ✅ Map tab opens your MapPage -->
+        <Tab Title="Map" Icon="ic_map.png">
+            <ShellContent
+                Title="Map"
+                ContentTemplate="{DataTemplate views:MapPage}"
+                Route="map" />
+        </Tab>
+
+        <Tab Title="Create" Icon="ic_create.png">
+            <ShellContent>
+                <ContentPage>
+                    <Grid Padding="20">
+                        <Label Text="Create page coming soon…" FontSize="18" />
+                    </Grid>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Profile" Icon="ic_profile.png">
+            <ShellContent>
+                <ContentPage>
+                    <Grid Padding="20">
+                        <Label Text="Profile page coming soon…" FontSize="18" />
+                    </Grid>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+    </TabBar>
 </Shell>

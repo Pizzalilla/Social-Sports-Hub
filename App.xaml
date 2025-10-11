@@ -1,14 +1,27 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Social_Sport_Hub"
              x:Class="Social_Sport_Hub.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+
+        <!-- Brand palette -->
+        <Color x:Key="TabBg">#F3F3F4</Color>
+        <!-- light gray bar -->
+        <Color x:Key="TabActive">#FF7A00</Color>
+        <!-- orange selected -->
+        <Color x:Key="TabText">#404040</Color>
+        <!-- dark label -->
+        <Color x:Key="TabInactive">#B0B0B0</Color>
+        <!-- gray icons/labels -->
+
+        <!-- Shell TabBar theming -->
+        <Style TargetType="Shell">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource TabBg}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource TabActive}" />
+            <Setter Property="Shell.TabBarTitleColor"      Value="{StaticResource TabActive}" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TabInactive}" />
+            <Setter Property="ForegroundColor"             Value="{StaticResource TabText}" />
+            <Setter Property="NavBarIsVisible"             Value="False" />
+        </Style>
     </Application.Resources>
 </Application>
