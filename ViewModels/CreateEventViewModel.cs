@@ -11,7 +11,7 @@ public class CreateEventViewModel : BaseViewModel
 
     public CreateEventViewModel()
     {
-        _service = new EventService(new AppDbContext());
+        _service = new EventService(new SportHubDbContext());
         CreateCommand = new Command(async () => await CreateAsync());
         StartTime = DateTime.Now.AddDays(1);
         Capacity = 8;

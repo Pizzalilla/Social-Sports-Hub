@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Social Sport Hub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7584a8a65eb3ecb616a399eec6a7671c71029c01")]
 [assembly: System.Reflection.AssemblyProductAttribute("Social Sport Hub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Social Sport Hub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

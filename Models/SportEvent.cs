@@ -1,31 +1,46 @@
 using System;
-using System.ComponentModel.DataAnnotations;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace SocialSports.Maui.Models;
-
-public class SportEvent
+namespace Social_Sport_Hub.Models
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    // Represents a sports event created by a host.
+    public sealed class SportEvent
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string Title { get; set; } = string.Empty;
+        public string SportType { get; set; } = string.Empty;
+        public DateTime StartTimeUtc { get; set; }
+        public string Address { get; set; } = string.Empty;
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public int Capacity { get; set; } = 10;
+        public Guid HostUserId { get; set; }
+        public SportEventRoster Roster { get; set; } = new SportEventRoster();
+        public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+    }
 
-    [MaxLength(120)]
-    public string Title { get; set; } = string.Empty;
+    // Custom enumerable to iterate confirmed players first, then waitlist.
+    public sealed class SportEventRoster : IEnumerable<User>
+    {
+        private readonly List<User> _confirmedPlayers = new();
+        private readonly List<User> _waitlistedPlayers = new();
 
-    public Sport Sport { get; set; }
+        public IReadOnlyList<User> ConfirmedPlayers => _confirmedPlayers;
+        public IReadOnlyList<User> WaitlistedPlayers => _waitlistedPlayers;
 
-    public DateTimeOffset StartTime { get; set; } = DateTimeOffset.UtcNow.AddDays(1);
+        public void AddConfirmed(User player) => _confirmedPlayers.Add(player);
+        public void AddWaitlisted(User player) => _waitlistedPlayers.Add(player);
 
-    public int Capacity { get; set; } = 8;
+        public IEnumerator<User> GetEnumerator()
+        {
+            foreach (var confirmed in _confirmedPlayers)
+                yield return confirmed;
 
-    public int PlayersJoined { get; set; } = 1;
+            foreach (var waitlisted in _waitlistedPlayers)
+                yield return waitlisted;
+        }
 
-    public Guid HostId { get; set; }
-
-    public double Latitude { get; set; }
-
-    public double Longitude { get; set; }
-
-    [MaxLength(160)]
-    public string? LocationName { get; set; }
-
-    public int SpotsLeft => Math.Max(0, Capacity - PlayersJoined);
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    }
 }

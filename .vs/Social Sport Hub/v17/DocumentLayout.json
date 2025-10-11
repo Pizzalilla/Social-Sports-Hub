@@ -1,0 +1,291 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\services\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\sportevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\sportevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\honoraudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\honoraudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\data\\sporthubdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:data\\sporthubdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\social sport hub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:social sport hub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\weathersummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\weathersummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\utilities\\extensions\\weatherextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\weatherextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\utilities\\extensions\\sporteventenumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\sporteventenumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\utilities\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\admin\\documents\\github\\social-sports-hub\\models\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:models\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Social Sport Hub",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeDocumentMoniker": "Social Sport Hub.csproj",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeToolTip": "Social Sport Hub.csproj",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-11T14:59:45.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAwwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:55:41.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EfRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\EfRepository.cs",
+              "RelativeDocumentMoniker": "Services\\EfRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\EfRepository.cs",
+              "RelativeToolTip": "Services\\EfRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:54:58.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SportEventEnumerableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:49:37.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherSummary.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\WeatherSummary.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherSummary.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\WeatherSummary.cs",
+              "RelativeToolTip": "Models\\WeatherSummary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:49:01.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DateTimeExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\DateTimeExtensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\DateTimeExtensions.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\DateTimeExtensions.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\DateTimeExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:48:20.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherExtension.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\WeatherExtension.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\WeatherExtension.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Utilities\\Extensions\\WeatherExtension.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\WeatherExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:48:42.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SportHubDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Data\\SportHubDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\SportHubDbContext.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Data\\SportHubDbContext.cs",
+              "RelativeToolTip": "Data\\SportHubDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:53:49.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "Models\\Attendance.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\Attendance.cs",
+              "RelativeToolTip": "Models\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:42:50.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HonorAudit.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\HonorAudit.cs",
+              "RelativeDocumentMoniker": "Models\\HonorAudit.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\HonorAudit.cs",
+              "RelativeToolTip": "Models\\HonorAudit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:43:05.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SportEvent.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\SportEvent.cs",
+              "RelativeDocumentMoniker": "Models\\SportEvent.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\SportEvent.cs",
+              "RelativeToolTip": "Models\\SportEvent.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:42:08.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:24:47.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:24:00.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\IRepository.cs",
+              "RelativeDocumentMoniker": "Services\\IRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Services\\IRepository.cs",
+              "RelativeToolTip": "Services\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:54:45.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ValidationResult.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\ValidationResult.cs",
+              "RelativeDocumentMoniker": "Models\\ValidationResult.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\Models\\ValidationResult.cs",
+              "RelativeToolTip": "Models\\ValidationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T14:43:20.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,12 +6,12 @@ namespace SocialSports.Maui.ViewModels;
 
 public class LoginViewModel : BaseViewModel
 {
-    private readonly AuthService _auth;
+    private readonly IAuthService _auth;
 
     public LoginViewModel()
     {
         // In a real app, use DI. Here we create the DbContext inline for simplicity.
-        _auth = new AuthService(new AppDbContext());
+        _auth = new IAuthService(new SportHubDbContext());
         LoginCommand = new Command(async () => await LoginAsync());
     }
 

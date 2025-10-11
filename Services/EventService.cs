@@ -6,9 +6,9 @@ namespace SocialSports.Maui.Services;
 
 public class EventService
 {
-    private readonly AppDbContext _db;
+    private readonly SportHubDbContext _db;
 
-    public EventService(AppDbContext db) => _db = db;
+    public EventService(SportHubDbContext db) => _db = db;
 
     public async Task<List<SportEvent>> GetUpcomingAsync(int page = 1, int size = 20)
     {

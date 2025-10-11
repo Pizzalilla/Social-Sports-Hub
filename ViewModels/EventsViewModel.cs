@@ -13,7 +13,7 @@ public class EventsViewModel : BaseViewModel
 
     public EventsViewModel()
     {
-        _service = new EventService(new AppDbContext());
+        _service = new EventService(new SportHubDbContext());
         LoadCommand = new Command(async () => await LoadAsync());
         JoinCommand = new Command<Guid>(async id => await JoinAsync(id));
     }
