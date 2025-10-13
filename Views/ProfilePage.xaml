@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SocialSports.Maui.Views.ProfilePage"
-             Title="Profile">
-    <VerticalStackLayout Padding="24" Spacing="12">
-        <Label Text="Your profile" FontSize="24" />
-        <Label Text="{Binding DisplayName}" FontAttributes="Bold" />
-        <Label Text="{Binding Email}" />
-    </VerticalStackLayout>
+             x:Class="Social_Sport_Hub.Views.ProfilePage">
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="18">
+            <Label Text="Your Profile" FontSize="28" FontAttributes="Bold" TextColor="#FF7A00" HorizontalOptions="Center" />
+            <Frame Padding="15" BackgroundColor="#FFF3E0" CornerRadius="16" HasShadow="False">
+                <VerticalStackLayout>
+                    <Label Text="Honor Score" FontSize="18" FontAttributes="Bold" TextColor="#404040" />
+                    <Label Text="{Binding HonorScore}" FontSize="36" FontAttributes="Bold" TextColor="#FF7A00" />
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Padding="15" BackgroundColor="#FAFAFA" CornerRadius="16" HasShadow="False">
+                <VerticalStackLayout>
+                    <Label Text="Recent Honor History" FontAttributes="Bold" FontSize="18" TextColor="#404040" />
+                    <CollectionView ItemsSource="{Binding HonorTrend}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <HorizontalStackLayout>
+                                    <Label Text="{Binding Timestamp, StringFormat='{0:dd MMM HH:mm}'}" TextColor="#666" FontSize="14" />
+                                    <Label Text="{Binding Score}" FontSize="14" FontAttributes="Bold" TextColor="#FF7A00" HorizontalOptions="EndAndExpand" />
+                                </HorizontalStackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Padding="12" BackgroundColor="#FFF8E1" CornerRadius="20" HasShadow="False" HorizontalOptions="Center">
+                <Label Text="{Binding WeatherInfo}" FontSize="16" TextColor="#404040" />
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

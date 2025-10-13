@@ -2,20 +2,15 @@
 
 namespace Social_Sport_Hub.Extensions
 {
-    public static class WeatherExtensions
+    public static class WeatherExtension
     {
         public static string ToEmoji(this WeatherSummary summary)
         {
-            if (summary.RainProbability >= 60)
-                return "🌧️";
-            if (summary.WindSpeedKph >= 30)
-                return "💨";
-            if (summary.TemperatureCelsius >= 30)
-                return "🔥";
-            if (summary.TemperatureCelsius <= 5)
-                return "❄️";
-
-            return "⛅";
+            if (summary.RainProbability > 50) return "🌧️";
+            if (summary.TemperatureCelsius > 30) return "☀️";
+            if (summary.TemperatureCelsius < 10) return "❄️";
+            if (summary.WindSpeedKph > 25) return "💨";
+            return "🌤️";
         }
     }
 }

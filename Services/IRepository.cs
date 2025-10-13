@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 
 namespace Social_Sport_Hub.Services
 {
-    // Generic repository abstraction for EF Core entities.
     public interface IRepository<TEntity> where TEntity : class
     {
         Task<TEntity> AddAsync(TEntity entity);

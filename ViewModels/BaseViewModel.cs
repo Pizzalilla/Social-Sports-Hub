@@ -1,18 +1,27 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace SocialSports.Maui.ViewModels;
-
-public abstract class BaseViewModel : INotifyPropertyChanged
+namespace Social_Sport_Hub.ViewModels
 {
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    protected void Set<T>(ref T field, T value, [CallerMemberName] string? name = null)
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
-        if (!Equals(field, value))
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string? name = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+
+        private bool _isBusy;
+        public bool IsBusy
         {
-            field = value;
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+            get => _isBusy;
+            set { _isBusy = value; OnPropertyChanged(); }
+        }
+
+        private string? _message;
+        public string? Message
+        {
+            get => _message;
+            set { _message = value; OnPropertyChanged(); }
         }
     }
 }

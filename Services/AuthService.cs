@@ -1,64 +1,53 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Social_Sport_Hub.Models;
 
-namespace Social_Sport_Hub.Services
+namespace Social_Sport_Hub.Services;
+
+public sealed class AuthService : IAuthService
 {
-    public sealed class AuthService : IAuthService
+    private readonly IRepository<User> _users;
+
+    public AuthService(IRepository<User> users) => _users = users;
+
+    public async Task<(bool IsSuccessful, string? ErrorMessage)> RegisterAsync(
+        string email, string password, string displayName, bool asHost = false)
     {
-        private readonly IRepository<User> _userRepository;
+        email = email?.Trim().ToLowerInvariant() ?? string.Empty;
+        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            return (false, "Email and password are required.");
 
-        public AuthService(IRepository<User> userRepository)
-        {
-            _userRepository = userRepository;
-        }
+        var exists = await _users.Query().AnyAsync(u => u.Email == email);
+        if (exists) return (false, "Email already registered.");
 
-        public async Task<(bool IsSuccessful, string? ErrorMessage)> RegisterAsync(string email, string password, string displayName, bool asHost = false)
-        {
-            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@"))
-                return (false, "Invalid email format.");
+        var salt = Guid.NewGuid().ToString("N");
+        var hash = User.HashPassword(password, salt);
 
-            if (string.IsNullOrWhiteSpace(password) || password.Length < 8)
-                return (false, "Password must be at least 8 characters long.");
+        User newUser = asHost ? new HostUser() : new PlayerUser();
+        newUser.Email = email;
+        newUser.DisplayName = string.IsNullOrWhiteSpace(displayName) ? email : displayName;
+        newUser.PasswordHash = $"{hash}:{salt}";
 
-            if (string.IsNullOrWhiteSpace(displayName))
-                return (false, "Display name cannot be empty.");
+        await _users.AddAsync(newUser);
+        await _users.SaveChangesAsync();
 
-            var alreadyExists = await _userRepository.Query().AnyAsync(u => u.Email == email);
-            if (alreadyExists)
-                return (false, "Email is already registered.");
+        return (true, null);
+    }
 
-            var salt = Guid.NewGuid().ToString("N");
-            var hash = User.HashPassword(password, salt) + ":" + salt;
+    public async Task<(bool IsSuccessful, User? AuthenticatedUser, string? ErrorMessage)> LoginAsync(
+        string email, string password)
+    {
+        email = email?.Trim().ToLowerInvariant() ?? string.Empty;
 
-            User newUser = asHost ? new HostUser() : new PlayerUser();
-            newUser.Email = email.Trim();
-            newUser.DisplayName = displayName.Trim();
-            newUser.PasswordHash = hash;
+        var user = await _users.Query().FirstOrDefaultAsync(u => u.Email == email);
+        if (user is null) return (false, null, "Account not found.");
 
-            await _userRepository.AddAsync(newUser);
-            await _userRepository.SaveChangesAsync();
+        var parts = user.PasswordHash.Split(':');
+        if (parts.Length != 2) return (false, null, "Credential error.");
 
-            return (true, null);
-        }
+        var computed = User.HashPassword(password, parts[1]);
+        if (!string.Equals(computed, parts[0], StringComparison.Ordinal))
+            return (false, null, "Incorrect password.");
 
-        public async Task<(bool IsSuccessful, User? AuthenticatedUser, string? ErrorMessage)> LoginAsync(string email, string password)
-        {
-            var user = await _userRepository.Query().FirstOrDefaultAsync(u => u.Email == email);
-            if (user == null)
-                return (false, null, "User not found.");
-
-            var parts = user.PasswordHash.Split(':');
-            if (parts.Length != 2)
-                return (false, null, "Invalid password hash.");
-
-            var computedHash = User.HashPassword(password, parts[1]);
-            if (!string.Equals(computedHash, parts[0], StringComparison.Ordinal))
-                return (false, null, "Incorrect password.");
-
-            return (true, user, null);
-        }
+        return (true, user, null);
     }
 }

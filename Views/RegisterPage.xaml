@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Social_Sport_Hub.Views.LoginPage"
-             Title="Login">
+             x:Class="Social_Sport_Hub.Views.RegisterPage"
+             Title="Register">
     <ScrollView>
         <VerticalStackLayout Padding="30" Spacing="18" VerticalOptions="Center">
-            <Label Text="Social Sports Hub" FontSize="26" FontAttributes="Bold"
+            <Label Text="Create Account" FontSize="26" FontAttributes="Bold"
              TextColor="#FF7A00" HorizontalOptions="Center" />
 
+            <Entry Placeholder="Display Name" Text="{Binding DisplayName}" />
             <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email" />
             <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True" />
 
-            <Button Text="Log In"
-              Command="{Binding LoginCommand}"
+            <Button Text="Sign Up"
+              Command="{Binding RegisterCommand}"
               BackgroundColor="#FF7A00" TextColor="White" CornerRadius="12" />
-
-            <Button Text="Register"
-              Command="{Binding NavigateRegisterCommand}"
-              BackgroundColor="#404040" TextColor="White" CornerRadius="12" />
 
             <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
             <Label Text="{Binding Message}" TextColor="#FF7A00" FontAttributes="Italic"

@@ -1,38 +1,46 @@
-using System.Windows.Input;
-using SocialSports.Maui.Data;
-using SocialSports.Maui.Services;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Storage;
+using Social_Sport_Hub.Services;
 
-namespace SocialSports.Maui.ViewModels;
+namespace Social_Sport_Hub.ViewModels;
 
-public class LoginViewModel : BaseViewModel
+public partial class LoginViewModel : ObservableObject
 {
     private readonly IAuthService _auth;
 
-    public LoginViewModel()
+    [ObservableProperty] private string email = string.Empty;
+    [ObservableProperty] private string password = string.Empty;
+    [ObservableProperty] private bool isBusy;
+    [ObservableProperty] private string message = string.Empty;
+
+    public IAsyncRelayCommand LoginCommand { get; }
+    public IAsyncRelayCommand NavigateRegisterCommand { get; }
+
+    public LoginViewModel(IAuthService auth)
     {
-        // In a real app, use DI. Here we create the DbContext inline for simplicity.
-        _auth = new IAuthService(new SportHubDbContext());
-        LoginCommand = new Command(async () => await LoginAsync());
+        _auth = auth;
+        LoginCommand = new AsyncRelayCommand(LoginAsync);
+        NavigateRegisterCommand = new AsyncRelayCommand(() => Shell.Current.GoToAsync(nameof(Social_Sport_Hub.Views.RegisterPage)));
     }
-
-    private string _email = "";
-    public string Email { get => _email; set => Set(ref _email, value); }
-
-    private string _password = "";
-    public string Password { get => _password; set => Set(ref _password, value); }
-
-    public ICommand LoginCommand { get; }
 
     private async Task LoginAsync()
     {
-        var user = await _auth.LoginAsync(Email, Password);
-        if (user is not null)
+        if (IsBusy) return;
+        IsBusy = true;
+        try
         {
-            await Shell.Current.GoToAsync("//EventsPage");
+            var (ok, user, error) = await _auth.LoginAsync(Email, Password);
+            if (!ok || user is null)
+            {
+                Message = error ?? "Login failed.";
+                return;
+            }
+
+            await SecureStorage.SetAsync("auth_user_id", user.Id.ToString());
+            await Shell.Current.GoToAsync("//home");
+            Message = $"Welcome {user.DisplayName}";
         }
-        else
-        {
-            await Application.Current.MainPage.DisplayAlert("Login failed", "Invalid credentials", "OK");
-        }
+        finally { IsBusy = false; }
     }
 }
