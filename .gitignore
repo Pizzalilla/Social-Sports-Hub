@@ -1,0 +1,42 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# IDE cruft
+.vs/
+*.user
+*.suo
+.idea/
+.DS_Store
+
+# Packages & logs
+*.log
+
+# Mobile bundles/keystores
+**/*.apk
+**/*.aab
+**/*.ap_
+**/*.ipa
+**/*.keystore
+
+# Local SQLite runtime DBs (only if you don't intentionally track any .db)
+*.db
+*.db-shm
+*.db-wal
+
+# VS / Rider / Xcode extras
+*.csproj.user
+*.userprefs
+*.sln.docstates
+.vscode/
+*.nupkg
+Thumbs.db
+**/*.tlog
+
+# iOS/macOS build noise (if you ever build on a Mac)
+**/*.xcuserstate
+**/*.xcworkspace/
+**/*.xcodeproj/xcuserdata/
+**/*.dSYM
+**/*.crash
+
