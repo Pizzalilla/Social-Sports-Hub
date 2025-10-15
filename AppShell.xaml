@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="Social_Sport_Hub.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Social_Sport_Hub"
-    Title="Social_Sport_Hub">
+<Shell x:Class="Social_Sport_Hub.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:Social_Sport_Hub.Views">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Unauthenticated root -->
+    <ShellItem Route="login">
+        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
+    </ShellItem>
 
+    <!-- Authenticated root: tabs -->
+    <TabBar Route="home">
+        <Tab Title="Events" Icon="ic_games.png">
+            <ShellContent>
+                <!-- Replace with your real Events page -->
+                <ContentPage Title="Events">
+                    <Label Text="Events go here" Padding="20"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Map" Icon="ic_map.png">
+            <ShellContent>
+                <!-- Replace with your real Map page -->
+                <ContentPage Title="Map">
+                    <Label Text="Map page" Padding="20"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Create" Icon="ic_create.png">
+            <ShellContent>
+                <!-- Replace with your real Create Event page -->
+                <ContentPage Title="Create">
+                    <Label Text="Create Event" Padding="20"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Profile" Icon="ic_profile.png">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" />
+        </Tab>
+    </TabBar>
 </Shell>

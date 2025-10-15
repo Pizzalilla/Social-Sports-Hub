@@ -1,4 +1,4 @@
-namespace SocialSports.Maui.Utilities;
+namespace Social_Sport_Hub.Utilities;
 
 public static class Extensions
 {
