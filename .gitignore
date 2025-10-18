@@ -22,7 +22,9 @@
 # Local SQLite runtime DBs (only if you don't intentionally track any .db)
 *.db
 *.db-shm
-*.db-wal
+*.db-wal*.db3
+*.db3
+
 
 # VS / Rider / Xcode extras
 *.csproj.user

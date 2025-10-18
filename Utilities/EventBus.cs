@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 
 namespace Social_Sports_Hub.Utilities
 {
-    // Minimal pub/sub so teammate code that calls EventBus.Publish/Subscribe compiles.
+    
     public static class EventBus
     {
         private static readonly ConcurrentDictionary<string, ConcurrentBag<Action<object?>>> _routes

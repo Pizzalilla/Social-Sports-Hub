@@ -2,44 +2,46 @@
 <Shell x:Class="Social_Sport_Hub.AppShell"
        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:views="clr-namespace:Social_Sport_Hub.Views">
+       xmlns:views="clr-namespace:Social_Sport_Hub.Views"
+       Shell.FlyoutBehavior="Disabled"
+       Shell.NavBarIsVisible="True">
 
-    <!-- Unauthenticated root -->
-    <ShellItem Route="login">
-        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
-    </ShellItem>
+    <!-- 🔒 LOGIN ROUTE -->
+    <ShellContent
+        Route="login"
+        ContentTemplate="{DataTemplate views:LoginPage}" />
 
-    <!-- Authenticated root: tabs -->
+    <!-- 🏠 MAIN AUTHENTICATED AREA -->
     <TabBar Route="home">
+
+        <!-- 🏟️ Events Tab -->
         <Tab Title="Events" Icon="ic_games.png">
-            <ShellContent>
-                <!-- Replace with your real Events page -->
-                <ContentPage Title="Events">
-                    <Label Text="Events go here" Padding="20"/>
-                </ContentPage>
-            </ShellContent>
+            <ShellContent
+                Route="events"
+                ContentTemplate="{DataTemplate views:EventsPage}" />
         </Tab>
 
+        <!-- 🗺️ Map Tab -->
         <Tab Title="Map" Icon="ic_map.png">
-            <ShellContent>
-                <!-- Replace with your real Map page -->
+            <ShellContent Route="map">
                 <ContentPage Title="Map">
-                    <Label Text="Map page" Padding="20"/>
+                    <Label Text="Map page" Padding="20" />
                 </ContentPage>
             </ShellContent>
         </Tab>
 
+        <!-- ✏️ Create Event Tab -->
         <Tab Title="Create" Icon="ic_create.png">
-            <ShellContent>
-                <!-- Replace with your real Create Event page -->
-                <ContentPage Title="Create">
-                    <Label Text="Create Event" Padding="20"/>
-                </ContentPage>
-            </ShellContent>
+            <ShellContent
+                Route="createevent"
+                ContentTemplate="{DataTemplate views:CreateEventPage}" />
         </Tab>
 
+        <!-- 👤 Profile Tab -->
         <Tab Title="Profile" Icon="ic_profile.png">
-            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" />
+            <ShellContent
+                Route="profile"
+                ContentTemplate="{DataTemplate views:ProfilePage}" />
         </Tab>
     </TabBar>
 </Shell>

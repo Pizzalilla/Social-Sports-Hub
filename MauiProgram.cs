@@ -1,55 +1,81 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Social_Sport_Hub.Data;          
-using Social_Sport_Hub.Services;     
-using Social_Sport_Hub.ViewModels;    
-using Social_Sport_Hub.Views;         
+using Social_Sport_Hub.Data;                 // ✅ Data layer (DbContext)
+using Social_Sport_Hub.Data.Models;          // ✅ Models (User, SportEvent, etc.)
+using Social_Sport_Hub.Services;             // ✅ Service layer
+using Social_Sport_Hub.ViewModels;           // ✅ ViewModels (Login, Events, etc.)
+using Social_Sport_Hub.Views;                // ✅ Pages (UI)
+using System.IO;
 
-namespace Social_Sport_Hub;
-
-public static class MauiProgram
+namespace Social_Sport_Hub
 {
-    public static MauiApp CreateMauiApp()
+    public static class MauiProgram
     {
-        var builder = MauiApp.CreateBuilder();
-        builder.UseMauiApp<App>();
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder.UseMauiApp<App>();
 
-        // SQLite path for EF
-        var dbPath = Path.Combine(FileSystem.AppDataDirectory, "socialsports.db3");
+            // ✅ Define SQLite database path for EF Core
+            var dbPath = Path.Combine(FileSystem.AppDataDirectory, "socialsports.db3");
 
-        // EF Core Sqlite
-        builder.Services.AddDbContext<SportsHubContext>(opt =>
-            opt.UseSqlite($"Data Source={dbPath}"));
+            // ✅ Register EF Core with SQLite provider
+            builder.Services.AddDbContext<SportsHubContext>(opt =>
+                opt.UseSqlite($"Data Source={dbPath}"));
 
-        // Repos & Services (adjust to your actual types)
-        builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
-        builder.Services.AddScoped<IAuthService, AuthService>();
+            // ✅ Register repository + core services
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<EventService>();
 
-        // ViewModels
-        builder.Services.AddTransient<LoginViewModel>();
-        builder.Services.AddTransient<RegisterViewModel>();
-        builder.Services.AddTransient<ProfileViewModel>();
+            // ✅ Register ViewModels
+            builder.Services.AddSingleton<EventsViewModel>();        // Shared (keeps event list alive)
+            builder.Services.AddTransient<CreateEventViewModel>();   // Fresh instance each time
+            builder.Services.AddTransient<LoginViewModel>();
+            builder.Services.AddTransient<RegisterViewModel>();
+            builder.Services.AddTransient<ProfileViewModel>();
 
-        // Pages (resolved from DI)
-        builder.Services.AddTransient<LoginPage>();
-        builder.Services.AddTransient<RegisterPage>();
-        builder.Services.AddTransient<ProfilePage>();
+            // ✅ Register Pages
+            builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<RegisterPage>();
+            builder.Services.AddTransient<ProfilePage>();
+            builder.Services.AddTransient<EventsPage>();
+            builder.Services.AddTransient<CreateEventPage>();
 
 #if DEBUG
-        builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
-        var app = builder.Build();
+            var app = builder.Build();
 
-        // Make the ServiceProvider available to XAML-created pages
-        App.ServiceProvider = app.Services;
+            // ✅ Make the DI service provider globally available
+            App.ServiceProvider = app.Services;
 
-        using (var scope = app.Services.CreateScope())
-        {
-            var db = scope.ServiceProvider.GetRequiredService<SportsHubContext>();
-            db.Database.Migrate();
+            // ✅ Apply migrations automatically on startup
+            using (var scope = app.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<SportsHubContext>();
+                db.Database.Migrate();
+
+                // ✅ Seed sample event if none exist (verifies DB connectivity)
+                if (!db.SportEvents.Any())
+                {
+                    db.SportEvents.Add(new SportEvent
+                    {
+                        Title = "EF Core Test Match",
+                        SportType = "Soccer",
+                        Address = "Sydney Park",
+                        StartTimeUtc = DateTime.UtcNow.AddDays(1),
+                        Capacity = 10
+                    });
+                    db.SaveChanges();
+                }
+
+                var count = db.SportEvents.Count();
+                System.Diagnostics.Debug.WriteLine($"✅ Database check OK – {count} events found");
+            }
+
+            return app;
         }
-
-        return app;
     }
 }

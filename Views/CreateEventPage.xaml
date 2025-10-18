@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SocialSports.Maui.Views.CreateEventPage"
-             Title="Create">
+             xmlns:viewmodels="clr-namespace:Social_Sport_Hub.ViewModels"
+             x:Class="Social_Sport_Hub.Views.CreateEventPage"
+             Title="Create Game"
+             BackgroundColor="#FAFAFA">
+
     <ScrollView>
-        <VerticalStackLayout Padding="24" Spacing="12">
-            <Entry Placeholder="Title" Text="{Binding Title}" />
-            <Picker Title="Sport" SelectedItem="{Binding Sport}">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Soccer</x:String>
-                        <x:String>Basketball</x:String>
-                        <x:String>Cricket</x:String>
-                        <x:String>Tennis</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-            <DatePicker Date="{Binding StartTime}" />
-            <TimePicker Time="{Binding StartTime, Mode=TwoWay}" />
-            <Entry Placeholder="Capacity" Keyboard="Numeric" Text="{Binding Capacity}" />
-            <Entry Placeholder="Location" Text="{Binding LocationName}" />
-            <Button Text="Create Event" Command="{Binding CreateCommand}" />
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Header -->
+            <Label Text="Game Details"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#222" />
+
+            <!-- Card Container -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="20"
+                   HasShadow="True"
+                   BorderColor="#E0E0E0">
+
+                <VerticalStackLayout Spacing="15">
+
+
+                    <!--  Title Field -->
+                    <Entry Placeholder="Title"
+                           Text="{Binding Title}"
+                           TextColor="#333"
+                           PlaceholderColor="#999"
+                           FontSize="16" />             
+
+                    <!--  Sport Picker -->
+                    <Picker Title="Select Sport"
+                            ItemsSource="{Binding SportOptions}"
+                            SelectedItem="{Binding SportType}" 
+                            ItemDisplayBinding="{Binding .}"
+                            TextColor="#333"
+                            FontSize="16" />
+
+                    <!--  Date & Time -->
+                    <DatePicker Date="{Binding Date}" />
+                    <TimePicker Time="{Binding Time}" />
+
+                    <!--  Capacity -->
+                    <Entry Placeholder="Capacity"
+                           Keyboard="Numeric"
+                           Text="{Binding Capacity}"
+                           TextColor="#333"
+                           PlaceholderColor="#999"
+                           FontSize="16" />
+
+                    <!--  Address -->
+                    <Editor Placeholder="Address"
+                            Text="{Binding Address}"
+                            AutoSize="TextChanges"
+                            HeightRequest="80"
+                            TextColor="#333"
+                            PlaceholderColor="#999"
+                            FontSize="16" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!--  Create Button -->
+            <Button Text="Create Game"
+                    Command="{Binding CreateEventCommand}"
+                    BackgroundColor="#6C63FF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="55"
+                    Margin="0,10,0,20" />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

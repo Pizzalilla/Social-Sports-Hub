@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -46,7 +46,8 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Social_Sport_Hub\Social_Sport_Hub.Data.csproj" />
+	  <ProjectReference Include="C:\Users\Julian13\source\repos\Social_Sport_Hub\Social_Sport_Hub.Data.csproj" />
+	  
 	</ItemGroup>
 
 

@@ -1,15 +1,214 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\Social-Sports-Hub\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\viewmodels\\createeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:viewmodels\\createeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\createeventpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\createeventpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\createeventpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\createeventpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\viewmodels\\eventsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:viewmodels\\eventsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\iwaitlistpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\iwaitlistpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\eventspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\utilities\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\sportshubcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\models\\sportevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\models\\sport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\models\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\eventspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\models\\honorhistoryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\honorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\honorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\ihonorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\ihonorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\honorprioritypolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\honorprioritypolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\sportshubcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\utilities\\extensions\\sporteventenumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\sporteventenumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\social sport hub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:social sport hub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\social_sport_hub.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\utilities\\extensions\\weatherextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions\\weatherextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\utilities\\eventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\eventbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\utilities\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:utilities\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\messages\\eventsupdatedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:messages\\eventsupdatedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\migrations\\20251017193132_tempcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\migrations\\20251017162522_addeventandattendancetables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{815E8974-CCAE-6ADF-BFF0-6667B2E9FDED}|..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj|c:\\users\\julian13\\source\\repos\\social_sport_hub\\migrations\\20251013154249_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\social sport hub.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:social sport hub.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Julian13\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\buildTransitive\\Microsoft.Build.Msix.Pri.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|c:\\users\\julian13\\source\\repos\\social-sports-hub\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{25DD6F64-7761-43FA-9EF5-CB3BCDDC7B76}|Social Sport Hub.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 325,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +221,706 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateEventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\CreateEventViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateEventViewModel.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\CreateEventViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateEventViewModel.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAiwEgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:56:04.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\EventsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EventsViewModel.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\EventsViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EventsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:54:31.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:59:48.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:14:29.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEventPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\CreateEventPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CreateEventPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\CreateEventPage.xaml.cs",
+              "RelativeToolTip": "Views\\CreateEventPage.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:02:14.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\EventsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\EventsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\EventsPage.xaml.cs",
+              "RelativeToolTip": "Views\\EventsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:59:05.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWaitlistPolicy.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IWaitlistPolicy.cs",
+              "RelativeDocumentMoniker": "Services\\IWaitlistPolicy.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IWaitlistPolicy.cs",
+              "RelativeToolTip": "Services\\IWaitlistPolicy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:12:19.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IRepository.cs",
+              "RelativeDocumentMoniker": "Services\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IRepository.cs",
+              "RelativeToolTip": "Services\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:12:13.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateEventPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\CreateEventPage.xaml",
+              "RelativeDocumentMoniker": "Views\\CreateEventPage.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\CreateEventPage.xaml",
+              "RelativeToolTip": "Views\\CreateEventPage.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T14:00:19.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T05:44:24.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DateTimeExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\DateTimeExtensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\DateTimeExtensions.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\DateTimeExtensions.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\DateTimeExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T06:08:40.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Sport.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\Sport.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Models\\Sport.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\Sport.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Models\\Sport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:53.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SportEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\SportEvent.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Models\\SportEvent.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\SportEvent.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Models\\SportEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T16:03:53.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SportsHubContext.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\SportsHubContext.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\SportsHubContext.cs",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\SportsHubContext.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\SportsHubContext.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwD8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:57:52.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\User.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T09:06:53.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AttendanceRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\AttendanceRecord.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Models\\AttendanceRecord.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Models\\AttendanceRecord.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Models\\AttendanceRecord.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T15:58:04.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IHonorService.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IHonorService.cs",
+              "RelativeDocumentMoniker": "Services\\IHonorService.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IHonorService.cs",
+              "RelativeToolTip": "Services\\IHonorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:12:08.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EventsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\EventsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\EventsPage.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\EventsPage.xaml",
+              "RelativeToolTip": "Views\\EventsPage.xaml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAhwD0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T13:59:14.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:54:00.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HonorService.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\HonorService.cs",
+              "RelativeDocumentMoniker": "Services\\HonorService.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\HonorService.cs",
+              "RelativeToolTip": "Services\\HonorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:12:00.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:01:00.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EfRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\EfRepository.cs",
+              "RelativeDocumentMoniker": "Services\\EfRepository.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\EfRepository.cs",
+              "RelativeToolTip": "Services\\EfRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:01:47.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HonorPriorityPolicy.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\HonorPriorityPolicy.cs",
+              "RelativeDocumentMoniker": "Services\\HonorPriorityPolicy.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\HonorPriorityPolicy.cs",
+              "RelativeToolTip": "Services\\HonorPriorityPolicy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:02:13.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SportsHubContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\SportsHubContextFactory.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\SportsHubContextFactory.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\SportsHubContextFactory.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\SportsHubContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T06:17:37.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "WeatherExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\WeatherExtension.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\WeatherExtension.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\WeatherExtension.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\WeatherExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T06:08:48.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SportEventEnumerableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "RelativeToolTip": "Utilities\\Extensions\\SportEventEnumerableExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T06:08:46.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EventBus.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\EventBus.cs",
+              "RelativeDocumentMoniker": "Utilities\\EventBus.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\EventBus.cs",
+              "RelativeToolTip": "Utilities\\EventBus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:38:18.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Services\\EventService.cs",
+              "RelativeToolTip": "Services\\EventService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:53:14.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T02:50:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T06:03:57.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\Extensions.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Utilities\\Extensions.cs",
+              "RelativeToolTip": "Utilities\\Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:53:37.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Social_Sport_Hub.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T17:11:55.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:26.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T02:39:26.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EventsUpdatedMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Messages\\EventsUpdatedMessage.cs",
+              "RelativeDocumentMoniker": "Messages\\EventsUpdatedMessage.cs",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Messages\\EventsUpdatedMessage.cs",
+              "RelativeToolTip": "Messages\\EventsUpdatedMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T03:23:33.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-10-18T04:31:49.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AgIAAAcKAAAAAAAAAAAAwB0KAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-18T03:28:49.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20251017193132_TempCheck.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251017193132_TempCheck.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Migrations\\20251017193132_TempCheck.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251017193132_TempCheck.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Migrations\\20251017193132_TempCheck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T19:31:32.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T14:04:00.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20251017162522_AddEventAndAttendanceTables.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251017162522_AddEventAndAttendanceTables.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Migrations\\20251017162522_AddEventAndAttendanceTables.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251017162522_AddEventAndAttendanceTables.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Migrations\\20251017162522_AddEventAndAttendanceTables.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T16:25:22.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HonorHistoryRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\Models\\HonorHistoryRecord.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Models\\HonorHistoryRecord.cs",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social_Sport_Hub\\Models\\HonorHistoryRecord.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Models\\HonorHistoryRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:53.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20251013154249_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251013154249_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Migrations\\20251013154249_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Migrations\\20251013154249_InitialCreate.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Migrations\\20251013154249_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:48.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "Views\\RegisterPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:24.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "Views\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:22.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:39:19.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T16:13:05.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "Views\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\RegisterPage.xaml",
+              "RelativeToolTip": "Views\\RegisterPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T14:04:09.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "Views\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\Views\\ProfilePage.xaml",
+              "RelativeToolTip": "Views\\ProfilePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-17T14:04:05.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Repositories\\AttendanceRepository.cs",
+              "RelativeDocumentMoniker": "..\\Social_Sport_Hub\\Repositories\\AttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Repositories\\AttendanceRepository.cs",
+              "RelativeToolTip": "..\\Social_Sport_Hub\\Repositories\\AttendanceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T18:53:28.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Julian13\\source\\repos\\Social-Sports-Hub\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-17T15:52:58.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Social Sport Hub",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeDocumentMoniker": "Social Sport Hub.csproj",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeToolTip": "Social Sport Hub.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T15:04:39.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Microsoft.Build.Msix.Pri.targets",
+              "DocumentMoniker": "C:\\Users\\Julian13\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\buildTransitive\\Microsoft.Build.Msix.Pri.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\buildTransitive\\Microsoft.Build.Msix.Pri.targets",
+              "ToolTip": "C:\\Users\\Julian13\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\buildTransitive\\Microsoft.Build.Msix.Pri.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\buildTransitive\\Microsoft.Build.Msix.Pri.targets",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAowBcCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-15T12:12:29.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Social Sport Hub.csproj",
+              "DocumentMoniker": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeDocumentMoniker": "Social Sport Hub.csproj",
+              "ToolTip": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
+              "RelativeToolTip": "Social Sport Hub.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T11:50:14.249Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 72,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",

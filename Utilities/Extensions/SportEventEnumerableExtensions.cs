@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Social_Sport_Hub.Models;
+using Social_Sport_Hub.Data.Models;
+
 
 namespace Social_Sport_Hub.Extensions
 {

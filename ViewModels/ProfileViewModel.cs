@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using Social_Sport_Hub.Models;
 using Social_Sport_Hub.Services;
+using Social_Sport_Hub.Data.Models;
+
 
 namespace Social_Sport_Hub.ViewModels
 {

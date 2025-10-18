@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Social_Sport_Hub.Data.Models;
+
 
 namespace Social_Sport_Hub.Services
 {
