@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Social_Sport_Hub.Data;
 
+
 namespace Social_Sport_Hub.Services
 {
     public sealed class EfRepository<TEntity> : IRepository<TEntity> where TEntity : class

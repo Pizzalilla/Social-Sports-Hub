@@ -1,30 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SocialSports.Maui.Views.EventsPage"
-             Title="Events">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Reload" Command="{Binding LoadCommand}" />
-    </ContentPage.ToolbarItems>
+             xmlns:viewmodels="clr-namespace:Social_Sport_Hub.ViewModels"
+             x:Class="Social_Sport_Hub.Views.EventsPage"
+             Title="All Games"
+             BackgroundColor="#FAFAFA">
 
-    <Grid RowDefinitions="Auto,*" Padding="12">
-        <Label Text="Upcoming games" FontAttributes="Bold" FontSize="20" />
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Events}" SelectionMode="None">
+    <RefreshView Command="{Binding LoadEventsCommand}" IsRefreshing="{Binding IsBusy}">
+        <CollectionView ItemsSource="{Binding Events}"
+                        Margin="15"
+                        VerticalScrollBarVisibility="Never"
+                        SelectionMode="None">
+
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="12" Margin="0,8" HasShadow="True">
-                        <VerticalStackLayout>
-                            <Label Text="{Binding Title}" FontAttributes="Bold" />
-                            <Label Text="{Binding StartTime}" />
-                            <Label Text="{Binding LocationName}" />
-                            <Grid ColumnDefinitions="*,Auto">
-                                <Label Text="{Binding SpotsLeft, StringFormat='Spots left: {0}'}" />
-                                <Button Grid.Column="1" Text="Join" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.JoinCommand}" CommandParameter="{Binding Id}" />
-                            </Grid>
-                        </VerticalStackLayout>
+                    <Frame Margin="0,10,0,0"
+                           Padding="15"
+                           BackgroundColor="White"
+                           BorderColor="#E0E0E0"
+                           CornerRadius="20"
+                           HasShadow="True">
+
+                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                            <!-- Sport Icon -->
+                            <Frame WidthRequest="40" HeightRequest="40"
+                                   BackgroundColor="#FF6B6B"
+                                   CornerRadius="20"
+                                   VerticalOptions="Center">
+                                <Label Text="⚽"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       FontSize="20"/>
+                            </Frame>
+
+                            <!-- Event Details -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="4" Margin="10,0,0,0">
+                                <Label Text="{Binding Title}" FontSize="18" FontAttributes="Bold" TextColor="#222"/>
+                                <Label Text="{Binding Address}" FontSize="14" TextColor="#666"/>
+                                <Label Text="{Binding StartTimeUtc, StringFormat='{0:MMM dd, h:mm tt}'}"
+                                       FontSize="13" TextColor="#888"/>
+                                <Label Text="{Binding SportType}" FontSize="13" TextColor="#999"/>
+                            </VerticalStackLayout>
+
+                                <!-- Join Button -->
+                      <Button Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        Text="Join Game"
+                        BackgroundColor="#6C63FF"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        Margin="0,10,0,0"
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:EventsViewModel}},
+                                          Path=JoinEventCommand}"
+                        CommandParameter="{Binding .}" />       
+
+                        </Grid>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </Grid>
+    </RefreshView>
 </ContentPage>

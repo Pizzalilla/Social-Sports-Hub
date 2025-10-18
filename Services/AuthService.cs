@@ -1,53 +1,56 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Social_Sport_Hub.Models;
+using Social_Sport_Hub.Data.Models;
 
-namespace Social_Sport_Hub.Services;
-
-public sealed class AuthService : IAuthService
+namespace Social_Sport_Hub.Services
 {
-    private readonly IRepository<User> _users;
-
-    public AuthService(IRepository<User> users) => _users = users;
-
-    public async Task<(bool IsSuccessful, string? ErrorMessage)> RegisterAsync(
-        string email, string password, string displayName, bool asHost = false)
+    public sealed class AuthService : IAuthService
     {
-        email = email?.Trim().ToLowerInvariant() ?? string.Empty;
-        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
-            return (false, "Email and password are required.");
+        private readonly IRepository<User> _users;
 
-        var exists = await _users.Query().AnyAsync(u => u.Email == email);
-        if (exists) return (false, "Email already registered.");
+        public AuthService(IRepository<User> users) => _users = users;
 
-        var salt = Guid.NewGuid().ToString("N");
-        var hash = User.HashPassword(password, salt);
+        public async Task<(bool ok, string? error)> RegisterAsync(
+            string email, string password, string displayName, bool asHost = false)
+        {
+            email = email?.Trim().ToLowerInvariant() ?? string.Empty;
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+                return (false, "Email and password are required.");
 
-        User newUser = asHost ? new HostUser() : new PlayerUser();
-        newUser.Email = email;
-        newUser.DisplayName = string.IsNullOrWhiteSpace(displayName) ? email : displayName;
-        newUser.PasswordHash = $"{hash}:{salt}";
+            var exists = await _users.Query().AnyAsync(u => u.Email == email);
+            if (exists)
+                return (false, "Email already registered.");
 
-        await _users.AddAsync(newUser);
-        await _users.SaveChangesAsync();
+            var salt = Guid.NewGuid().ToString("N");
+            var hash = User.HashPassword(password, salt);
 
-        return (true, null);
-    }
+            User newUser = asHost ? new HostUser() : new PlayerUser();
+            newUser.Email = email;
+            newUser.DisplayName = string.IsNullOrWhiteSpace(displayName) ? email : displayName;
+            newUser.PasswordHash = $"{hash}:{salt}";
 
-    public async Task<(bool IsSuccessful, User? AuthenticatedUser, string? ErrorMessage)> LoginAsync(
-        string email, string password)
-    {
-        email = email?.Trim().ToLowerInvariant() ?? string.Empty;
+            await _users.AddAsync(newUser);
+            await _users.SaveChangesAsync();
 
-        var user = await _users.Query().FirstOrDefaultAsync(u => u.Email == email);
-        if (user is null) return (false, null, "Account not found.");
+            return (true, null);
+        }
 
-        var parts = user.PasswordHash.Split(':');
-        if (parts.Length != 2) return (false, null, "Credential error.");
+        public async Task<(bool ok, User? user, string? error)> LoginAsync(string email, string password)
+        {
+            email = email?.Trim().ToLowerInvariant() ?? string.Empty;
 
-        var computed = User.HashPassword(password, parts[1]);
-        if (!string.Equals(computed, parts[0], StringComparison.Ordinal))
-            return (false, null, "Incorrect password.");
+            var user = await _users.Query().FirstOrDefaultAsync(u => u.Email == email);
+            if (user is null)
+                return (false, null, "Account not found.");
 
-        return (true, user, null);
+            var parts = user.PasswordHash.Split(':');
+            if (parts.Length != 2)
+                return (false, null, "Credential error.");
+
+            var computed = User.HashPassword(password, parts[1]);
+            if (!string.Equals(computed, parts[0], StringComparison.Ordinal))
+                return (false, null, "Incorrect password.");
+
+            return (true, user, null);
+        }
     }
 }
