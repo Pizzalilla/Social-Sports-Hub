@@ -8,6 +8,7 @@ public partial class AppShell : Shell
     {
         InitializeComponent();
         Routing.RegisterRoute(nameof(Views.RegisterPage), typeof(Views.RegisterPage));
+        Routing.RegisterRoute("eventdetail", typeof(Views.EventDetailPage)); 
         _ = DecideStartAsync();
     }
 

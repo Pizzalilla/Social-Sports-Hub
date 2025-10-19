@@ -46,8 +46,19 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" />
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\Social_Sport_Hub.Data\Social_Sport_Hub.Data.csproj" />
 	  <ProjectReference Include="C:\Users\Julian13\source\repos\Social_Sport_Hub\Social_Sport_Hub.Data.csproj" />
 	  
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Views\EventDetailPage.xaml.cs">
+	    <DependentUpon>EventDetailPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\EventDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 

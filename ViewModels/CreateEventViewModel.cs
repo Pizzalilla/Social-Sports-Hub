@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Social_Sport_Hub.Data;
 using Social_Sport_Hub.Data.Models;
-using Social_Sport_Hub.Models;
 using Social_Sport_Hub.Services;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ namespace Social_Sport_Hub.ViewModels
     public partial class CreateEventViewModel : ObservableObject
     {
         private readonly EventService _eventService;
+        private readonly SportsHubContext _context;
 
         // 🔹 Properties bound to UI
         [ObservableProperty] private string title = string.Empty;
@@ -56,6 +57,16 @@ namespace Social_Sport_Hub.ViewModels
             {
                 IsBusy = true;
 
+                // Get current user ID
+                var userIdStr = await SecureStorage.GetAsync("auth_user_id");
+                if (string.IsNullOrEmpty(userIdStr))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Please log in first", "OK");
+                    return;
+                }
+
+                var userId = Guid.Parse(userIdStr);
+
                 // Combine Date + Time for accurate event start
                 var startLocal = Date.Date + Time;
 
@@ -65,10 +76,22 @@ namespace Social_Sport_Hub.ViewModels
                     SportType = SportType,
                     Address = Address,
                     StartTimeUtc = startLocal.ToUniversalTime(),
-                    Capacity = Capacity
+                    Capacity = Capacity,
+                    HostUserId = userId // ✅ Set the host
                 };
 
                 await _eventService.AddEventAsync(newEvent);
+
+                // ✅ AUTO-ADD CREATOR TO ATTENDANCE
+                var context = App.ServiceProvider.GetRequiredService<SportsHubContext>();
+                context.AttendanceRecords.Add(new AttendanceRecord
+                {
+                    SportEventId = newEvent.Id,
+                    UserId = userId,
+                    Status = AttendanceStatus.Confirmed,
+                    MarkedAtUtc = DateTime.UtcNow
+                });
+                await context.SaveChangesAsync();
 
                 // Notify that the event was successfully created
                 EventCreated?.Invoke(this, EventArgs.Empty);

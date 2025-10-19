@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Social_Sport_Hub.Views.EventDetailPage"
+             Title="Event Details"
+             BackgroundColor="#FAFAFA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Event Info -->
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{Binding Event.Title}" FontSize="24" FontAttributes="Bold" TextColor="#222"/>
+                    <Label Text="{Binding Event.SportType}" FontSize="16" TextColor="#666"/>
+                    <Label Text="{Binding Event.Address}" FontSize="14" TextColor="#888"/>
+                    <Label Text="{Binding Event.StartTimeUtc, StringFormat='Start: {0:MMM dd, h:mm tt}'}" 
+                           FontSize="14" TextColor="#888"/>
+                    <Label Text="{Binding CapacityDisplay, StringFormat='Capacity: {0}'}" 
+                           FontSize="14" TextColor="#FF6B6B" FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Host Information -->
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Host Information" FontSize="18" FontAttributes="Bold" TextColor="#222"/>
+                    <Label Text="{Binding HostName, StringFormat='Name: {0}'}" FontSize="14" TextColor="#666"/>
+                    <Label Text="{Binding HostEmail, StringFormat='Email: {0}'}" FontSize="14" TextColor="#666"/>
+                    <Label Text="{Binding HostPhone, StringFormat='Phone: {0}'}" FontSize="14" TextColor="#666"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Attendees Section -->
+            <Label Text="Who's Coming" FontSize="20" FontAttributes="Bold" TextColor="#222"/>
+
+            <CollectionView ItemsSource="{Binding Attendees}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,5" Padding="15" BackgroundColor="White" 
+                               CornerRadius="12" HasShadow="True">
+                            <HorizontalStackLayout Spacing="10">
+                                <Frame WidthRequest="40" HeightRequest="40" 
+                                       BackgroundColor="#6C63FF" CornerRadius="20"
+                                       Padding="0" HasShadow="False">
+                                    <Label Text="👤" HorizontalOptions="Center" 
+                                           VerticalOptions="Center" FontSize="20"/>
+                                </Frame>
+                                <Label Text="{Binding DisplayName}" 
+                                       VerticalOptions="Center" FontSize="16" TextColor="#333"/>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="Join This Event"
+                    Command="{Binding JoinEventCommand}"
+                    BackgroundColor="#6C63FF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="55"
+                    Margin="0,10,0,0"/>
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                               IsVisible="{Binding IsBusy}"
+                               Color="#6C63FF"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -34,6 +34,9 @@ namespace Social_Sport_Hub
             builder.Services.AddTransient<LoginViewModel>();
             builder.Services.AddTransient<RegisterViewModel>();
             builder.Services.AddTransient<ProfileViewModel>();
+            builder.Services.AddTransient<EventDetailViewModel>();
+            builder.Services.AddTransient<ProfileViewModel>();
+            builder.Services.AddTransient<CreateEventViewModel>();
 
             // ✅ Register Pages
             builder.Services.AddTransient<LoginPage>();
@@ -41,6 +44,7 @@ namespace Social_Sport_Hub
             builder.Services.AddTransient<ProfilePage>();
             builder.Services.AddTransient<EventsPage>();
             builder.Services.AddTransient<CreateEventPage>();
+            builder.Services.AddTransient<EventDetailPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

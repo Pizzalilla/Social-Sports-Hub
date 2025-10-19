@@ -1040,7 +1040,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -4234,7 +4234,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -7416,7 +7416,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -10598,7 +10598,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -13780,7 +13780,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -16962,7 +16962,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.21": {
+      "Microsoft.NET.ILLink.Tasks/8.0.20": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -30572,10 +30572,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.21": {
-      "sha512": "s8H5PZQs50OcNkaB6Si54+v3GWM7vzs6vxFRMlD3aXsbM+aPCtod62gmK0BYWou9diGzmo56j8cIf/PziijDqQ==",
+    "Microsoft.NET.ILLink.Tasks/8.0.20": {
+      "sha512": "Rhcto2AjGvTO62+/VTmBpumBOmqIGp7nYEbTbmEXkCq4yPGxV8whju3/HsIA/bKyo2+DggaYk5+/8sxb1AbPTw==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.21",
+      "path": "microsoft.net.illink.tasks/8.0.20",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -30589,7 +30589,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.21.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.20.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -34126,8 +34126,8 @@
     },
     "Social_Sport_Hub.Data/1.0.0": {
       "type": "project",
-      "path": "../Social_Sport_Hub/Social_Sport_Hub.Data.csproj",
-      "msbuildProject": "../Social_Sport_Hub/Social_Sport_Hub.Data.csproj"
+      "path": "../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj",
+      "msbuildProject": "../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -34141,7 +34141,7 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.21",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.20",
       "Social_Sport_Hub.Data >= 1.0.0"
     ],
     "net8.0-windows10.0.19041": [
@@ -34158,24 +34158,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Julian13\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
       "projectName": "SocialSportHub",
-      "projectPath": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\Social Sport Hub.csproj",
-      "packagesPath": "C:\\Users\\Julian13\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Julian13\\Source\\Repos\\Social-Sports-Hub\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Julian13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34192,6 +34192,9 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
+            "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj"
+            },
             "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj": {
               "projectPath": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj"
             }
@@ -34200,6 +34203,9 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {
+            "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj"
+            },
             "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj": {
               "projectPath": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj"
             }
@@ -34265,7 +34271,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.21, )",
+            "version": "[8.0.20, )",
             "autoReferenced": true
           }
         },
@@ -34310,7 +34316,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
@@ -34381,7 +34387,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
