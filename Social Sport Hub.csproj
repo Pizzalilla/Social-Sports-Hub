@@ -11,6 +11,14 @@
 		<!-- ✅ Make ALL code compile under this root namespace -->
 		<RootNamespace>Social_Sport_Hub</RootNamespace>
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Raw\map.html" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiAsset Include="Resources\Raw\map.html">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </MauiAsset>
+	</ItemGroup>
 
 	<ItemGroup>
 		<MauiFont Include="Resources\Fonts\OpenSans-Regular.ttf" Alias="OpenSansRegular" />
@@ -54,9 +62,15 @@
 	  <Compile Update="Views\EventDetailPage.xaml.cs">
 	    <DependentUpon>EventDetailPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\MapPage.xaml.cs">
+	    <DependentUpon>MapPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\EventDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MapPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

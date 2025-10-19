@@ -23,11 +23,10 @@
 
         <!-- 🗺️ Map Tab -->
         <Tab Title="Map" Icon="ic_map.png">
-            <ShellContent Route="map">
-                <ContentPage Title="Map">
-                    <Label Text="Map page" Padding="20" />
-                </ContentPage>
-            </ShellContent>
+            <ShellContent
+            Title="Map"
+            Icon="tab_map.png"
+            ContentTemplate="{DataTemplate views:MapPage}" />
         </Tab>
 
         <!-- ✏️ Create Event Tab -->
@@ -44,4 +43,5 @@
                 ContentTemplate="{DataTemplate views:ProfilePage}" />
         </Tab>
     </TabBar>
+
 </Shell>
