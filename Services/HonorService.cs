@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Social_Sport_Hub.Models;
 using Social_Sport_Hub.Data.Models;
 
 

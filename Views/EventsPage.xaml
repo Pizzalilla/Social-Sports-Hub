@@ -21,7 +21,7 @@
                            CornerRadius="20"
                            HasShadow="True">
 
-                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto">
                             <!-- Sport Icon -->
                             <Frame WidthRequest="40" HeightRequest="40"
                                    BackgroundColor="#FF6B6B"
@@ -35,25 +35,38 @@
 
                             <!-- Event Details -->
                             <VerticalStackLayout Grid.Column="1" Spacing="4" Margin="10,0,0,0">
-                                <Label Text="{Binding Title}" FontSize="18" FontAttributes="Bold" TextColor="#222"/>
-                                <Label Text="{Binding Address}" FontSize="14" TextColor="#666"/>
-                                <Label Text="{Binding StartTimeUtc, StringFormat='{0:MMM dd, h:mm tt}'}"
+                                <Label Text="{Binding Event.Title}" FontSize="18" FontAttributes="Bold" TextColor="#222"/>
+                                <Label Text="{Binding Event.Address}" FontSize="14" TextColor="#666"/>
+                                <Label Text="{Binding Event.StartTimeUtc, StringFormat='{0:MMM dd, h:mm tt}'}"
                                        FontSize="13" TextColor="#888"/>
-                                <Label Text="{Binding SportType}" FontSize="13" TextColor="#999"/>
+                                <Label Text="{Binding Event.SportType}" FontSize="13" TextColor="#999"/>
                             </VerticalStackLayout>
 
-                                <!-- Join Button -->
-                      <Button Grid.Row="2"
-                        Grid.ColumnSpan="2"
-                        Text="Join Game"
-                        BackgroundColor="#6C63FF"
-                        TextColor="White"
-                        FontAttributes="Bold"
-                        CornerRadius="10"
-                        Margin="0,10,0,0"
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:EventsViewModel}},
-                                          Path=JoinEventCommand}"
-                        CommandParameter="{Binding .}" />       
+                            <!-- Capacity Badge -->
+                            <Frame Grid.Column="2"
+                                   BackgroundColor="#6C63FF"
+                                   CornerRadius="15"
+                                   Padding="10,5"
+                                   VerticalOptions="Start"
+                                   HasShadow="False">
+                                <Label Text="{Binding CapacityDisplay}"
+                                       TextColor="White"
+                                       FontSize="14"
+                                       FontAttributes="Bold"/>
+                            </Frame>
+
+                            <!-- View Details Button -->
+                            <Button Grid.Row="2"
+                                    Grid.ColumnSpan="3"
+                                    Text="View Details"
+                                    BackgroundColor="#6C63FF"
+                                    TextColor="White"
+                                    FontAttributes="Bold"
+                                    CornerRadius="10"
+                                    Margin="0,10,0,0"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:EventsViewModel}},
+                                                      Path=ViewEventDetailsCommand}"
+                                    CommandParameter="{Binding Event}" />
 
                         </Grid>
                     </Frame>

@@ -1,34 +1,134 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Social_Sport_Hub.Views.ProfilePage">
+             xmlns:viewmodels="clr-namespace:Social_Sport_Hub.ViewModels"
+             x:Class="Social_Sport_Hub.Views.ProfilePage"
+             Title="Profile"
+             BackgroundColor="#FAFAFA">
+
     <ScrollView>
-        <VerticalStackLayout Padding="25" Spacing="18">
-            <Label Text="Your Profile" FontSize="28" FontAttributes="Bold" TextColor="#FF7A00" HorizontalOptions="Center" />
-            <Frame Padding="15" BackgroundColor="#FFF3E0" CornerRadius="16" HasShadow="False">
-                <VerticalStackLayout>
-                    <Label Text="Honor Score" FontSize="18" FontAttributes="Bold" TextColor="#404040" />
-                    <Label Text="{Binding HonorScore}" FontSize="36" FontAttributes="Bold" TextColor="#FF7A00" />
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Profile Photo -->
+            <Frame WidthRequest="120" HeightRequest="120" 
+                   CornerRadius="60"
+                   Padding="0"
+                   HorizontalOptions="Center"
+                   HasShadow="True"
+                   BorderColor="#6C63FF">
+                <Image Source="{Binding ProfilePhotoPath}"
+                       Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PickPhotoCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+
+            <Label Text="Tap photo to change"
+                   FontSize="12"
+                   TextColor="#888"
+                   HorizontalOptions="Center"/>
+
+            <!-- Profile Details -->
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Profile Information" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="#222"/>
+
+                    <Label Text="Display Name" FontSize="14" TextColor="#666"/>
+                    <Entry Text="{Binding DisplayName}" 
+                           Placeholder="Enter your name"
+                           FontSize="16"/>
+
+                    <Label Text="Email" FontSize="14" TextColor="#666"/>
+                    <Label Text="{Binding Email}" 
+                           FontSize="16"
+                           TextColor="#333"/>
+
+                    <Label Text="Phone Number" FontSize="14" TextColor="#666"/>
+                    <Entry Text="{Binding PhoneNumber}" 
+                           Placeholder="Enter phone number"
+                           Keyboard="Telephone"
+                           FontSize="16"/>
                 </VerticalStackLayout>
             </Frame>
-            <Frame Padding="15" BackgroundColor="#FAFAFA" CornerRadius="16" HasShadow="False">
-                <VerticalStackLayout>
-                    <Label Text="Recent Honor History" FontAttributes="Bold" FontSize="18" TextColor="#404040" />
-                    <CollectionView ItemsSource="{Binding HonorTrend}">
+
+            <!-- Preferred Sports -->
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Preferred Sports" 
+                           FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="#222"/>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Picker ItemsSource="{Binding AvailableSports}"
+                                SelectedItem="{Binding SelectedSport}"
+                                Title="Select Sport"
+                                HorizontalOptions="FillAndExpand"
+                                FontSize="16"/>
+                        <Button Text="Add"
+                                Command="{Binding AddSportCommand}"
+                                BackgroundColor="#6C63FF"
+                                TextColor="White"
+                                WidthRequest="80"
+                                CornerRadius="10"/>
+                    </HorizontalStackLayout>
+
+                    <CollectionView ItemsSource="{Binding PreferredSports}">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <HorizontalStackLayout>
-                                    <Label Text="{Binding Timestamp, StringFormat='{0:dd MMM HH:mm}'}" TextColor="#666" FontSize="14" />
-                                    <Label Text="{Binding Score}" FontSize="14" FontAttributes="Bold" TextColor="#FF7A00" HorizontalOptions="EndAndExpand" />
-                                </HorizontalStackLayout>
+                                <Frame Margin="0,5" 
+                                       Padding="15,10" 
+                                       BackgroundColor="#F0F0F0" 
+                                       CornerRadius="10"
+                                       HasShadow="False">
+                                    <HorizontalStackLayout Spacing="10">
+                                        <Label Text="{Binding .}" 
+                                               VerticalOptions="Center"
+                                               FontSize="16"
+                                               HorizontalOptions="FillAndExpand"/>
+                                        <Button Text="✕"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:ProfileViewModel}}, Path=RemoveSportCommand}"
+                                                CommandParameter="{Binding .}"
+                                                BackgroundColor="#FF6B6B"
+                                                TextColor="White"
+                                                WidthRequest="40"
+                                                HeightRequest="40"
+                                                CornerRadius="20"
+                                                Padding="0"
+                                                FontSize="16"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </VerticalStackLayout>
             </Frame>
-            <Frame Padding="12" BackgroundColor="#FFF8E1" CornerRadius="20" HasShadow="False" HorizontalOptions="Center">
-                <Label Text="{Binding WeatherInfo}" FontSize="16" TextColor="#404040" />
-            </Frame>
+
+            <!-- Save Button -->
+            <Button Text="Save Profile"
+                    Command="{Binding SaveProfileCommand}"
+                    BackgroundColor="#6C63FF"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="55"/>
+
+            <!-- Logout Button -->
+            <Button Text="Logout"
+                    Command="{Binding LogoutCommand}"
+                    BackgroundColor="#FF6B6B"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="55"/>
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                               IsVisible="{Binding IsBusy}"
+                               Color="#6C63FF"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

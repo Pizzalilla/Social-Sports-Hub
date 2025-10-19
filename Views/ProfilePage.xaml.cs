@@ -16,9 +16,7 @@ namespace Social_Sport_Hub.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            // TODO: Replace with real current user id from your auth/session
-            var currentUserId = Guid.NewGuid();
-            await _vm.LoadUserAsync(currentUserId);
+            await _vm.LoadUserProfileAsync();
         }
     }
 }
