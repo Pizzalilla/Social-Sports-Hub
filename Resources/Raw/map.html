@@ -15,38 +15,51 @@
     <div id="map"></div>
 
     <script>
-        let map;
-        function initMap() {
-            const defaultPos = { lat: 37.7749, lng: -122.4194 };
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: defaultPos,
-                zoom: 12
-            });
-        }
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmKWHgwUOXxYT1nN7lV8I-_DLMtfN5ejY&libraries=places"></script>
 
-        function setCenter(lat, lng, zoom) {
-            if (!map) return;
-            map.setCenter({ lat: parseFloat(lat), lng: parseFloat(lng) });
-            if (zoom) map.setZoom(parseInt(zoom));
-        }
+    let map;
+    function initMap() {
+    const defaultPos = { lat: 37.7749, lng: -122.4194 };
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: defaultPos,
+    zoom: 12,
+    });
+    }
 
-        function addMarker(lat, lng, title) {
-            if (!map) return;
-            new google.maps.Marker({
-                position: { lat: parseFloat(lat), lng: parseFloat(lng) },
-                map,
-                title: title || ''
-            });
-        }
+    function setCenter(lat, lng, zoom) {
+    if (!map) return;
+    map.setCenter({ lat: parseFloat(lat), lng: parseFloat(lng) });
+    if (zoom) map.setZoom(parseInt(zoom));
+    }
 
-        function isReady() { return !!map; }
+    function addMarker(lat, lng, title) {
+    if (!map) return;
+    new google.maps.Marker({
+    position: { lat: parseFloat(lat), lng: parseFloat(lng) },
+    map: map,
+    title: title || '',
+    });
+    }
+
+    // Expose simple ready check for MAUI
+    function isReady() { return !!map; }
+
     </script>
 
-    <!-- Option A: hardcode (quick test). Replace YOUR_KEY with a real key. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&libraries=places&callback=initMap" async defer></script>
-
-    <!-- Option B (recommended): keep a placeholder and inject in code-behind)
-         <script src="https://maps.googleapis.com/maps/api/js?key=__API_KEY__&libraries=places&callback=initMap" async defer></script>
-    -->
+    <!-- The actual script tag with API key will be injected by MAUI (so we avoid committing keys). -->
+    <script id="maps-script"></script>
+    <script>
+        // This script tag will be replaced by MAUI before passing HTML to WebView:
+        // e.g. html = html.replace("__MAP_SCRIPT_TAG__", `<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap" async defer></script>`);
+    // For safety here, attempt to init if the script was already inserted.
+    window.__maybeInit = function() {
+    if (typeof google !== 'undefined' && !window.__mapInitialized) {
+    window.__mapInitialized = true;
+    if (typeof initMap === 'function') initMap();
+    }
+    };
+    // Poll in case script loads later
+    setInterval(window.__maybeInit, 200);
+    </script>
 </body>
 </html>

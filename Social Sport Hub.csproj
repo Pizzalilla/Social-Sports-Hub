@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿ <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<AssemblyName>SocialSportHub</AssemblyName>
 		<TargetFrameworks>net8.0-windows10.0.19041.0;net8.0-android</TargetFrameworks>
@@ -11,16 +11,14 @@
 		<!-- ✅ Make ALL code compile under this root namespace -->
 		<RootNamespace>Social_Sport_Hub</RootNamespace>
 	</PropertyGroup>
-	<ItemGroup>
-	  <None Remove="Resources\Raw\map.html" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiAsset Include="Resources\Raw\map.html">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </MauiAsset>
-	</ItemGroup>
+	 <ItemGroup>
+		 <MauiAsset Include="Resources\Raw\map.html">
+			 <LogicalName>map.html</LogicalName>
+		 </MauiAsset>
+	 </ItemGroup>
 
-	<ItemGroup>
+
+	 <ItemGroup>
 		<MauiFont Include="Resources\Fonts\OpenSans-Regular.ttf" Alias="OpenSansRegular" />
 		<MauiFont Include="Resources\Fonts\OpenSans-Semibold.ttf" Alias="OpenSansSemibold" />
 	</ItemGroup>
@@ -54,8 +52,8 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Social_Sport_Hub.Data\Social_Sport_Hub.Data.csproj" />
-	  <ProjectReference Include="C:\Users\Julian13\source\repos\Social_Sport_Hub\Social_Sport_Hub.Data.csproj" />
+	  <ProjectReference Include="..\..\Social_Sport_Hub.Data\Social_Sport_Hub.Data.csproj" />
+	  <!-- <ProjectReference Include="C:\Users\Julian13\source\repos\Social_Sport_Hub\Social_Sport_Hub.Data.csproj" /> -->
 	  
 	</ItemGroup>
 	<ItemGroup>
@@ -76,7 +74,8 @@
 	</ItemGroup>
 
 
-	<!-- Per-target platform versions to avoid NETSDK warnings -->
+
+	 <!-- Per-target platform versions to avoid NETSDK warnings -->
 	<PropertyGroup Condition="'$(TargetFramework)'=='net8.0-android'">
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
 	</PropertyGroup>

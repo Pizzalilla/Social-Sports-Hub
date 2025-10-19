@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "epFiqDKVLos=",
+  "dgSpecHash": "B1JNkh37x/I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",

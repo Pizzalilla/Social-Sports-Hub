@@ -34126,8 +34126,8 @@
     },
     "Social_Sport_Hub.Data/1.0.0": {
       "type": "project",
-      "path": "../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj",
-      "msbuildProject": "../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj"
+      "path": "../../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj",
+      "msbuildProject": "../../Social_Sport_Hub.Data/Social_Sport_Hub.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -34164,11 +34164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
       "projectName": "SocialSportHub",
-      "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
+      "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social-Sports-Hub\\Social Sport Hub.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social-Sports-Hub\\Social-Sports-Hub\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -34194,9 +34194,6 @@
           "projectReferences": {
             "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj": {
               "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj"
-            },
-            "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj": {
-              "projectPath": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj"
             }
           }
         },
@@ -34205,9 +34202,6 @@
           "projectReferences": {
             "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj": {
               "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\Social Sports Hub\\Social_Sport_Hub.Data\\Social_Sport_Hub.Data.csproj"
-            },
-            "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj": {
-              "projectPath": "C:\\Users\\Julian13\\source\\repos\\Social_Sport_Hub\\Social_Sport_Hub.Data.csproj"
             }
           }
         }

@@ -45,7 +45,6 @@ namespace Social_Sport_Hub
             builder.Services.AddTransient<EventsPage>();
             builder.Services.AddTransient<CreateEventPage>();
             builder.Services.AddTransient<EventDetailPage>();
-            //builder.Services.AddTransient<MapPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
