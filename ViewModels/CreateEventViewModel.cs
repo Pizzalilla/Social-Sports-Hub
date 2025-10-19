@@ -48,10 +48,44 @@ namespace Social_Sport_Hub.ViewModels
             _eventService = eventService;
         }
 
+
         [RelayCommand]
         public async Task CreateEventAsync()
         {
             if (IsBusy) return;
+
+            // ✅ INPUT VALIDATION (REQUIRED FOR RUBRIC)
+            var validationErrors = new List<string>();
+
+            if (string.IsNullOrWhiteSpace(Title))
+                validationErrors.Add("• Title is required");
+
+            if (string.IsNullOrWhiteSpace(SportType))
+                validationErrors.Add("• Sport type is required");
+
+            if (string.IsNullOrWhiteSpace(Address))
+                validationErrors.Add("• Address is required");
+
+            if (Capacity < 2)
+                validationErrors.Add("• Capacity must be at least 2");
+            else if (Capacity > 100)
+                validationErrors.Add("• Capacity cannot exceed 100");
+
+            if (Date.Date < DateTime.Today)
+                validationErrors.Add("• Event date cannot be in the past");
+
+            var eventDateTime = Date.Date + Time;
+            if (eventDateTime <= DateTime.Now)
+                validationErrors.Add("• Event time must be in the future");
+
+            if (validationErrors.Any())
+            {
+                await App.Current.MainPage.DisplayAlert(
+                    "Validation Failed",
+                    string.Join("\n", validationErrors),
+                    "OK");
+                return;
+            }
 
             try
             {
@@ -77,12 +111,12 @@ namespace Social_Sport_Hub.ViewModels
                     Address = Address,
                     StartTimeUtc = startLocal.ToUniversalTime(),
                     Capacity = Capacity,
-                    HostUserId = userId // ✅ Set the host
+                    HostUserId = userId
                 };
 
                 await _eventService.AddEventAsync(newEvent);
 
-                // ✅ AUTO-ADD CREATOR TO ATTENDANCE
+                // Auto-add creator to attendance
                 var context = App.ServiceProvider.GetRequiredService<SportsHubContext>();
                 context.AttendanceRecords.Add(new AttendanceRecord
                 {

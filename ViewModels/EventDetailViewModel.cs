@@ -136,5 +136,91 @@ namespace Social_Sport_Hub.ViewModels
                 IsBusy = false;
             }
         }
+
+        [RelayCommand]
+        private async Task ViewUserProfileAsync(User user)
+        {
+            if (user == null) return;
+
+            var userType = user is HostUser ? "Host" : "Player";
+            var memberSince = user.CreatedAtUtc.ToString("MMMM dd, yyyy");
+
+            await App.Current.MainPage.DisplayAlert(
+                $"{user.DisplayName}'s Profile",
+                $"📧 Email: {user.Email}\n" +
+                $"📅 Member since: {memberSince}\n" +
+                $"👤 User type: {userType}\n",
+                "Close"
+            );
+        }
+
+        /// <summary>
+        /// Remove an attendee from the event (Host only).
+        /// </summary>
+        [RelayCommand]
+        private async Task RemoveAttendeeAsync(User user)
+        {
+            if (IsBusy || Event == null || user == null) return;
+
+            try
+            {
+                var currentUserIdStr = await SecureStorage.GetAsync("auth_user_id");
+                if (string.IsNullOrEmpty(currentUserIdStr))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Please log in first", "OK");
+                    return;
+                }
+
+                var currentUserId = Guid.Parse(currentUserIdStr);
+
+                // Only host can remove attendees
+                if (Event.HostUserId != currentUserId)
+                {
+                    await App.Current.MainPage.DisplayAlert("Error",
+                        "Only the event host can remove attendees", "OK");
+                    return;
+                }
+
+                // Can't remove yourself
+                if (user.Id == currentUserId)
+                {
+                    await App.Current.MainPage.DisplayAlert("Error",
+                        "You cannot remove yourself. Cancel the event instead.", "OK");
+                    return;
+                }
+
+                var confirm = await App.Current.MainPage.DisplayAlert(
+                    "Remove Attendee",
+                    $"Remove {user.DisplayName} from this event?",
+                    "Yes", "No");
+
+                if (!confirm) return;
+
+                IsBusy = true;
+
+                var attendance = await _context.AttendanceRecords
+                    .FirstOrDefaultAsync(a => a.SportEventId == Event.Id && a.UserId == user.Id);
+
+                if (attendance != null)
+                {
+                    _context.AttendanceRecords.Remove(attendance);
+                    await _context.SaveChangesAsync();
+
+                    await App.Current.MainPage.DisplayAlert("Success",
+                        $"{user.DisplayName} has been removed from the event", "OK");
+
+                    await LoadEventDetailsAsync(Event.Id);
+                }
+            }
+            catch (Exception ex)
+            {
+                await App.Current.MainPage.DisplayAlert("Error",
+                    $"Failed to remove attendee: {ex.Message}", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
     }
 }

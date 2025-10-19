@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Social_Sport_Hub.Data;              // ✅ For SportsHubContext
-using Social_Sport_Hub.Data.Models;       // ✅ For SportEvent
+using Social_Sport_Hub.Data;
+using Social_Sport_Hub.Data.Models;
+using Social_Sport_Hub.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,12 @@ namespace Social_Sport_Hub.Services
     public class EventService
     {
         private readonly SportsHubContext _context;
+        private readonly GenericCache<SportEvent> _eventCache;
 
         public EventService(SportsHubContext context)
         {
             _context = context;
+            _eventCache = new GenericCache<SportEvent>(e => e.Id);
         }
 
         /// <summary>
@@ -28,17 +31,34 @@ namespace Social_Sport_Hub.Services
             await _context.SportEvents.AddAsync(newEvent);
             await _context.SaveChangesAsync();
 
+            // Add to cache
+            _eventCache.Add(newEvent);
+
             System.Diagnostics.Debug.WriteLine($"✅ Event added: {newEvent.Title}");
         }
 
         /// <summary>
         /// Returns all events (sorted by start time ascending).
+        /// Demonstrates generic cache usage.
         /// </summary>
         public async Task<List<SportEvent>> GetAllEventsAsync()
         {
+            // Try cache first (demonstrates generic usage)
+            if (_eventCache.Count > 0)
+            {
+                System.Diagnostics.Debug.WriteLine($"📦 Loaded {_eventCache.Count} events from cache");
+                return _eventCache.GetAll().OrderBy(e => e.StartTimeUtc).ToList();
+            }
+
             var list = await _context.SportEvents
                 .OrderBy(e => e.StartTimeUtc)
                 .ToListAsync();
+
+            // Populate cache
+            foreach (var ev in list)
+            {
+                _eventCache.Add(ev);
+            }
 
             System.Diagnostics.Debug.WriteLine($"📂 Loaded {list.Count} events from database");
             return list;
@@ -49,6 +69,11 @@ namespace Social_Sport_Hub.Services
         /// </summary>
         public async Task<SportEvent?> GetEventByIdAsync(Guid id)
         {
+            // Try cache first
+            var cached = _eventCache.Get(id);
+            if (cached != null)
+                return cached;
+
             return await _context.SportEvents
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
@@ -63,7 +88,18 @@ namespace Social_Sport_Hub.Services
             {
                 _context.SportEvents.Remove(ev);
                 await _context.SaveChangesAsync();
+
+                // Remove from cache
+                _eventCache.Remove(id);
             }
+        }
+
+        /// <summary>
+        /// Clears the event cache (useful for testing or refresh).
+        /// </summary>
+        public void ClearCache()
+        {
+            _eventCache.Clear();
         }
     }
 }

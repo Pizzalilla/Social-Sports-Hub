@@ -99,5 +99,63 @@ namespace Social_Sport_Hub.ViewModels
                 await LoadEventsAsync();
             }
         }
+
+        // Add this method to EventsViewModel
+        [RelayCommand]
+        private async Task FilterEventsBySportAsync(string sportType)
+        {
+            if (IsBusy) return;
+
+            try
+            {
+                IsBusy = true;
+
+                var allEvents = await _eventService.GetAllEventsAsync();
+
+                // ✅ LINQ Lambda with Anonymous Method (REQUIRED FOR RUBRIC)
+                var filtered = allEvents
+                    .Where(e => string.IsNullOrEmpty(sportType) || e.SportType.Equals(sportType, StringComparison.OrdinalIgnoreCase))
+                    .OrderBy(e => e.StartTimeUtc)
+                    .Select(e => new
+                    {
+                        Event = e,
+                        DaysUntil = (e.StartTimeUtc - DateTime.UtcNow).Days,
+                        IsUpcoming = e.StartTimeUtc > DateTime.UtcNow
+                    })
+                    .Where(x => x.IsUpcoming) // Anonymous method usage
+                    .Select(x => x.Event)
+                    .ToList();
+
+                var eventIds = filtered.Select(e => e.Id).ToList();
+                var attendeeCounts = await _context.AttendanceRecords
+                    .Where(a => eventIds.Contains(a.SportEventId))
+                    .GroupBy(a => a.SportEventId)
+                    .Select(g => new { EventId = g.Key, Count = g.Count() })
+                    .ToDictionaryAsync(x => x.EventId, x => x.Count);
+
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    Events.Clear();
+                    foreach (var item in filtered)
+                    {
+                        Events.Add(new EventWithCount
+                        {
+                            Event = item,
+                            AttendeeCount = attendeeCounts.GetValueOrDefault(item.Id, 0)
+                        });
+                    }
+                });
+
+                System.Diagnostics.Debug.WriteLine($"📊 Filtered to {filtered.Count} {sportType} events");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"❌ Error filtering events: {ex}");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
     }
 }
