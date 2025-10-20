@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Storage;
 using Social_Sport_Hub.Services;
-using Social_Sport_Hub.Data.Models; // ✅ Ensures access to User type
+using Social_Sport_Hub.Data.Models;
 
 namespace Social_Sport_Hub.ViewModels
 {
