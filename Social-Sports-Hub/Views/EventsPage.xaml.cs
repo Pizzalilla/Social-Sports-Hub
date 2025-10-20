@@ -20,7 +20,6 @@ public partial class EventsPage : ContentPage
 
         System.Diagnostics.Debug.WriteLine("🔄 EventsPage appearing - forcing refresh");
 
-        // ✅ FIX: Always force refresh when page appears
         if (_viewModel != null)
         {
             // Restore filter picker state
