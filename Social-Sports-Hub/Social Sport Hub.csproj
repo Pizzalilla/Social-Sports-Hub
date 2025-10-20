@@ -36,6 +36,10 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	    <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
 	<!-- Add inside the existing <Project> ... <ItemGroup> with assets -->
 	<ItemGroup>
 		<!-- App icon (MAUI will generate @mipmap/appicon & round variants) -->
