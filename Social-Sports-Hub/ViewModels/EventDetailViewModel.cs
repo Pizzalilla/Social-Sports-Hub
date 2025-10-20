@@ -138,7 +138,6 @@ namespace Social_Sport_Hub.ViewModels
                 _context.AttendanceRecords.Add(attendance);
                 await _context.SaveChangesAsync();
 
-                // ✅ FIX: Reload event details immediately
                 await LoadEventDetailsAsync(Event.Id);
 
                 await App.Current.MainPage.DisplayAlert("Success",
@@ -224,7 +223,6 @@ namespace Social_Sport_Hub.ViewModels
                     _context.AttendanceRecords.Remove(attendance);
                     await _context.SaveChangesAsync();
 
-                    // ✅ FIX: Reload event details immediately
                     await LoadEventDetailsAsync(Event.Id);
 
                     await App.Current.MainPage.DisplayAlert("Success",
@@ -293,7 +291,6 @@ namespace Social_Sport_Hub.ViewModels
                 await App.Current.MainPage.DisplayAlert("Success",
                     "Event has been deleted", "OK");
 
-                // ✅ FIX: Send message to refresh events list
                 WeakReferenceMessenger.Default.Send(new EventsUpdatedMessage());
 
                 // Navigate back
