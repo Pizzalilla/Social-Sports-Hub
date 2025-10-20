@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <style>
+        html, body, #map {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmKWHgwUOXxYT1nN7lV8I-_DLMtfN5ejY"></script>
+
+    <script>
+      function initMap() {
+        const center = { lat: -33.8688, lng: 151.2093 }; // Sydney
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: center,
+        });
+
+        // Example events
+        const events = [
+          { lat: -33.870, lng: 151.210, title: "Soccer Game" },
+          { lat: -33.865, lng: 151.215, title: "Basketball 3v3" },
+        ];
+
+        events.forEach(e =>
+          new google.maps.Marker({ position: e, map: map, title: e.title })
+        );
+      }
+      window.onload = initMap;
+    </script>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
