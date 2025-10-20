@@ -15,12 +15,11 @@ namespace Social_Sport_Hub.ViewModels
         private readonly EventService _eventService;
         private readonly SportsHubContext _context;
 
-        // 🔹 Properties bound to UI
+        // Properties bound to UI
         [ObservableProperty] private string title = string.Empty;
         [ObservableProperty] private string sportType = string.Empty;
         [ObservableProperty] private string address = string.Empty;
 
-        // ✅ Split date and time for proper Picker binding
         [ObservableProperty] private DateTime date = DateTime.Today.AddDays(1);
         [ObservableProperty] private TimeSpan time = new(12, 0, 0); // default 12 PM
 
@@ -40,7 +39,7 @@ namespace Social_Sport_Hub.ViewModels
             "Other"
         };
 
-        // 🔔 Event raised after successful creation
+        // Event raised after successful creation
         public event EventHandler? EventCreated;
 
         public CreateEventViewModel(EventService eventService)
@@ -54,7 +53,7 @@ namespace Social_Sport_Hub.ViewModels
         {
             if (IsBusy) return;
 
-            // ✅ INPUT VALIDATION (REQUIRED FOR RUBRIC)
+            //INPUT VALIDATION
             var validationErrors = new List<string>();
 
             if (string.IsNullOrWhiteSpace(Title))
