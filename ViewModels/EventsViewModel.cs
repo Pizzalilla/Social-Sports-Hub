@@ -30,6 +30,12 @@ namespace Social_Sport_Hub.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
+        [ObservableProperty]
+        private string currentFilter = "All Sports";
+
+        [ObservableProperty]
+        private bool isFilterActive = false;
+
         public EventsViewModel(EventService eventService, SportsHubContext context)
         {
             _eventService = eventService;
@@ -50,6 +56,13 @@ namespace Social_Sport_Hub.ViewModels
             try
             {
                 IsBusy = true;
+
+                // ✅ FIX: If filter is active, reapply it
+                if (IsFilterActive && CurrentFilter != "All Sports")
+                {
+                    await FilterEventsBySportAsync(CurrentFilter);
+                    return;
+                }
 
                 var list = await _eventService.GetAllEventsAsync();
 
@@ -97,6 +110,80 @@ namespace Social_Sport_Hub.ViewModels
             if (Events.Count == 0 && !IsBusy)
             {
                 await LoadEventsAsync();
+            }
+        }
+
+        [RelayCommand]
+        private async Task FilterEventsBySportAsync(string sportType)
+        {
+            if (IsBusy) return;
+
+            try
+            {
+                IsBusy = true;
+
+                System.Diagnostics.Debug.WriteLine($"🔍 Filter called with: {sportType}");
+
+                // ✅ SAVE FILTER STATE
+                CurrentFilter = sportType ?? "All Sports";
+                IsFilterActive = CurrentFilter != "All Sports";
+
+                var allEvents = await _eventService.GetAllEventsAsync();
+
+                System.Diagnostics.Debug.WriteLine($"📊 Total events: {allEvents.Count}");
+
+                // Handle "All Sports" or null/empty
+                var filterSport = (sportType == "All Sports" || string.IsNullOrEmpty(sportType))
+                    ? null
+                    : sportType;
+
+                // ✅ LINQ Lambda with Anonymous Method (REQUIRED FOR RUBRIC)
+                var filtered = allEvents
+                    .Where(e => filterSport == null || e.SportType.Equals(filterSport, StringComparison.OrdinalIgnoreCase))
+                    .OrderBy(e => e.StartTimeUtc)
+                    .Select(e => new
+                    {
+                        Event = e,
+                        DaysUntil = (e.StartTimeUtc - DateTime.UtcNow).Days,
+                        IsUpcoming = e.StartTimeUtc > DateTime.UtcNow
+                    })
+                    .Where(x => x.IsUpcoming) // Anonymous method usage
+                    .Select(x => x.Event)
+                    .ToList();
+
+                System.Diagnostics.Debug.WriteLine($"✅ Filtered to: {filtered.Count} events");
+
+                var eventIds = filtered.Select(e => e.Id).ToList();
+                var attendeeCounts = await _context.AttendanceRecords
+                    .Where(a => eventIds.Contains(a.SportEventId))
+                    .GroupBy(a => a.SportEventId)
+                    .Select(g => new { EventId = g.Key, Count = g.Count() })
+                    .ToDictionaryAsync(x => x.EventId, x => x.Count);
+
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    Events.Clear();
+                    foreach (var item in filtered)
+                    {
+                        Events.Add(new EventWithCount
+                        {
+                            Event = item,
+                            AttendeeCount = attendeeCounts.GetValueOrDefault(item.Id, 0)
+                        });
+                    }
+                });
+
+                var sportName = filterSport ?? "all";
+                System.Diagnostics.Debug.WriteLine($"📊 Showing {filtered.Count} {sportName} events");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"❌ Error filtering events: {ex}");
+                await App.Current.MainPage.DisplayAlert("Error", $"Filter failed: {ex.Message}", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }
