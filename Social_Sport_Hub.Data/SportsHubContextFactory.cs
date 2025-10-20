@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace Social_Sport_Hub.Data
 {
-    /// <summary>
     /// Factory used exclusively by EF Core tools at design-time (for migrations).
-    /// </summary>
     public sealed class SportsHubContextFactory : IDesignTimeDbContextFactory<SportsHubContext>
     {
         public SportsHubContext CreateDbContext(string[] args)
@@ -27,3 +25,4 @@ namespace Social_Sport_Hub.Data
         }
     }
 }
+
