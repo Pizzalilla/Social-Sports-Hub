@@ -8,7 +8,6 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<!-- ✅ Make ALL code compile under this root namespace -->
 		<RootNamespace>Social_Sport_Hub</RootNamespace>
 	</PropertyGroup>
 
@@ -42,7 +41,6 @@
 		<!-- App icon (MAUI will generate @mipmap/appicon & round variants) -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
 
-		<!-- Optional splash (keeps Android Studio happy) -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" />
 	</ItemGroup>
 	<ItemGroup>
