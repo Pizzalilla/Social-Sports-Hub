@@ -5,15 +5,13 @@ using Social_Sport_Hub.Data.Models;
 
 namespace Social_Sport_Hub.Data
 {
-    /// <summary>
     /// Central Entity Framework Core database context for the Social Sport Hub app.
     /// Manages Users, Events, Attendance, and Honor history tables.
-    /// </summary>
     public sealed class SportsHubContext : DbContext
     {
         public SportsHubContext(DbContextOptions<SportsHubContext> options) : base(options)
         {
-            // ✅ Log database path for debugging
+            //Log database path for debugging
             try
             {
                 var dbPath = Database.GetDbConnection().DataSource;
@@ -21,18 +19,16 @@ namespace Social_Sport_Hub.Data
             }
             catch
             {
-                // Ignore if connection not yet configured
             }
         }
 
-        // --- DbSets ---
+        //DbSets
         public DbSet<User> Users => Set<User>();
         public DbSet<HostUser> Hosts => Set<HostUser>();
         public DbSet<PlayerUser> Players => Set<PlayerUser>();
         public DbSet<SportEvent> SportEvents => Set<SportEvent>();
         public DbSet<AttendanceRecord> AttendanceRecords => Set<AttendanceRecord>();
         public DbSet<HonorHistoryRecord> HonorHistory => Set<HonorHistoryRecord>();
-        // ---------------
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -77,3 +73,4 @@ namespace Social_Sport_Hub.Data
         }
     }
 }
+
