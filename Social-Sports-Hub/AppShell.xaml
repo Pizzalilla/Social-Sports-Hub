@@ -23,11 +23,9 @@
 
         <!-- 🗺️ Map Tab -->
         <Tab Title="Map" Icon="ic_map.png">
-            <ShellContent Route="map">
-                <ContentPage Title="Map">
-                    <Label Text="Map page" Padding="20" />
-                </ContentPage>
-            </ShellContent>
+            <ShellContent
+                ContentTemplate="{DataTemplate views:MapPage}"
+                Route="map" />
         </Tab>
 
         <!-- ✏️ Create Event Tab -->
