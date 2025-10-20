@@ -1,35 +1,95 @@
-🏀 SocialSportsHub
+🏀 Social Sports Hub
 
-SocialSports is a mobile app built with .NET MAUI that makes it easy to host and join local pickup sports. Whether you’re looking for a quick soccer game, a basketball run, or just want to see what’s happening nearby, SocialSports helps you connect with players in minutes.
+Social Sports Hub is a cross-platform mobile app built with .NET MAUI that makes it easy to host, discover, and join local pickup sports games. Whether you’re looking for a quick soccer match, basketball run, or simply want to connect with nearby players — Social Sports Hub helps you find and create games in minutes.
 
-✨ Purpose
+⚙️ Project Setup
+🧩 1. Adding the Existing Data Project
 
-Finding people to play casual sports with is often a hassle — group chats get messy, and it’s hard to know who’s free. SocialSports solves this by giving players a simple, central place to discover, create, and join games with just a few taps.
+Open the Social_Sport_Hub.sln solution in Visual Studio.
 
-🚀 Features
+In the Solution Explorer, right-click on the solution → Add → Existing Project...
 
-Game Feed – Browse upcoming games with sport type, start time, location, and spots left.
+Navigate to the Social_Sport_Hub.Data folder and select the file:
 
-One-Tap Join – Join instantly; capacity is enforced so no over-booking.
+Social_Sport_Hub.Data.csproj
 
-Create a Game – Hosts can add a sport, title, time, capacity, and location in seconds.
 
-Profile Page – View your display name, email, and participation stats.
+Ensure the project now appears under the solution with the main app project.
 
-Login Flow – Sign in to access create/join actions.
+🔗 2. Add a Project Reference
 
-Local Storage – All games and users are saved with SQLite for quick offline access.
+To allow the main MAUI project to access data layer components:
 
-Seeded Demo Data – Out-of-the-box user and event for instant testing.
+In Solution Explorer, right-click the Social_Sport_Hub project → Add → Project Reference...
 
-📱 Screens
+Check the box next to Social_Sport_Hub.Data and click OK.
 
-Events (Home): Upcoming games list with join buttons.
+If the reference fails to load, manually edit your .csproj file and include the full path:
 
-Event Details: Full info and spots left.
+<ItemGroup>
+  <ProjectReference Include="C:\FullPath\To\Social_Sport_Hub.Data\Social_Sport_Hub.Data.csproj" />
+</ItemGroup>
 
-Create Game: Simple form to host a new match.
+💡 Project Overview
+🎯 Purpose
 
-Profile: View your account and participation summary.
+Finding people to play casual sports with is often difficult — chat groups get messy, and schedules rarely align. Social Sports Hub centralizes this process, letting players view nearby games, host new ones, and track participation easily.
 
-Login: Basic sign-in screen.
+🧱 Core Features
+
+Map Integration: Displays local games and player locations using Google Maps.
+
+Event Management: Users can create, join, update, or cancel sports events.
+
+Weather API: Shows real-time weather for the selected game day.
+
+Profile System: Displays honor score, player streaks, and basic statistics.
+
+NUnit Testing: Ensures backend logic and data integrity.
+
+Entity Framework Core: Manages database access and LINQ queries.
+
+Responsive UI: Resizable and consistent across Android, iOS, Windows, and macOS.
+
+🧩 Technical Highlights
+Category	Implementation
+Framework	.NET MAUI
+Architecture	MVC Pattern with separate Data Layer
+Database	Entity Framework Core (Local SQLite)
+APIs Used	Weather API, Google Maps
+Testing	NUnit
+Language	C#
+UI Design	Resizable Forms, Clean Layout, Multiple Unique UI Elements
+🧠 Code Structure
+Social_Sport_Hub/
+│
+├── Models/
+│   ├── SportEvent.cs
+│   ├── User.cs
+│   └── WeatherInfo.cs
+│
+├── Views/
+│   ├── MainPage.xaml
+│   ├── ProfilePage.xaml
+│   ├── MapPage.xaml
+│   └── CreateEventPage.xaml
+│
+├── ViewModels/
+│   ├── MainViewModel.cs
+│   ├── ProfileViewModel.cs
+│   └── EventViewModel.cs
+│
+├── Data/  <-- separate project
+│   ├── Social_Sport_Hub.Data.csproj
+│   ├── ApplicationDbContext.cs
+│   └── Migrations/
+│
+└── Tests/
+    └── NUnit tests for data and logic
+
+🧪 Bonus Features Implemented
+
+✅ External API (Weather)
+✅ Entity Framework Core with LINQ
+✅ External Database Integration
+✅ MAUI (cross-platform UI instead of WinForms)
