@@ -26,4 +26,5 @@ To allow the main MAUI project to access the data layer components:
 <ItemGroup>
   <ProjectReference Include="C:\FullPath\To\Social_Sport_Hub.Data\Social_Sport_Hub.Data.csproj" />
 </ItemGroup>
-```xml
+
+
