@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodels="clr-namespace:Social_Sport_Hub.ViewModels"
              x:Class="Social_Sport_Hub.Views.EventDetailPage"
              Title="Event Details"
              BackgroundColor="#FAFAFA">
@@ -43,41 +42,41 @@
                             <SwipeView.RightItems>
                                 <SwipeItems>
                                     <SwipeItem Text="Remove"
-                                   BackgroundColor="#FF6B6B"
-                                   Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.RemoveAttendeeCommand}"
-                                   CommandParameter="{Binding .}" />
+                                               BackgroundColor="#FF6B6B"
+                                               Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.RemoveAttendeeCommand}"
+                                               CommandParameter="{Binding .}" />
                                 </SwipeItems>
                             </SwipeView.RightItems>
 
                             <!-- Attendee Card -->
                             <Frame Margin="0,5" Padding="15" BackgroundColor="White" 
-                       CornerRadius="12" HasShadow="True">
+                                   CornerRadius="12" HasShadow="True">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer 
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ViewUserProfileCommand}"
-                            CommandParameter="{Binding .}" />
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ViewUserProfileCommand}"
+                                        CommandParameter="{Binding .}" />
                                 </Frame.GestureRecognizers>
 
                                 <HorizontalStackLayout Spacing="10">
                                     <Frame WidthRequest="40" HeightRequest="40" 
-                               BackgroundColor="#6C63FF" CornerRadius="20"
-                               Padding="0" HasShadow="False">
+                                           BackgroundColor="#6C63FF" CornerRadius="20"
+                                           Padding="0" HasShadow="False">
                                         <Label Text="👤" HorizontalOptions="Center" 
-                                   VerticalOptions="Center" FontSize="20"/>
+                                               VerticalOptions="Center" FontSize="20"/>
                                     </Frame>
                                     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
                                         <Label Text="{Binding DisplayName}" 
-                                   FontSize="16" 
-                                   TextColor="#333"
-                                   FontAttributes="Bold"/>
+                                               FontSize="16" 
+                                               TextColor="#333"
+                                               FontAttributes="Bold"/>
                                         <Label Text="Tap to view profile • Swipe to remove" 
-                                   FontSize="11" 
-                                   TextColor="#999"/>
+                                               FontSize="11" 
+                                               TextColor="#999"/>
                                     </VerticalStackLayout>
                                     <Label Text="→" 
-                               FontSize="20" 
-                               TextColor="#CCC"
-                               VerticalOptions="Center"/>
+                                           FontSize="20" 
+                                           TextColor="#CCC"
+                                           VerticalOptions="Center"/>
                                 </HorizontalStackLayout>
                             </Frame>
                         </SwipeView>
@@ -85,6 +84,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Join Button (Hidden for Host) -->
             <Button Text="Join This Event"
                     Command="{Binding JoinEventCommand}"
                     BackgroundColor="#6C63FF"
@@ -92,7 +92,19 @@
                     FontAttributes="Bold"
                     CornerRadius="12"
                     HeightRequest="55"
-                    Margin="0,10,0,0"/>
+                    Margin="0,10,0,0"
+                    IsVisible="{Binding IsNotHost}"/>
+
+            <!-- Delete Event Button (Visible Only to Host) -->
+            <Button Text="🗑️ Delete Event"
+                    Command="{Binding DeleteEventCommand}"
+                    BackgroundColor="#FF6B6B"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="50"
+                    Margin="0,10,0,0"
+                    IsVisible="{Binding IsHost}"/>
 
             <ActivityIndicator IsRunning="{Binding IsBusy}" 
                                IsVisible="{Binding IsBusy}"

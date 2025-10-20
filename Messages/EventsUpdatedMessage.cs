@@ -2,8 +2,10 @@
 
 namespace Social_Sport_Hub.Messages
 {
-    public class EventsUpdatedMessage : ValueChangedMessage<bool>
+    public class EventsUpdatedMessage
     {
-        public EventsUpdatedMessage() : base(true) { }
+        public EventsUpdatedMessage()
+        {
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Social_Sport_Hub.Utilities
 {
-    class Class1
+    internal class GenericCache
     {
     }
 }

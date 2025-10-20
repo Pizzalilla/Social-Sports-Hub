@@ -52,25 +52,25 @@
 
         <!-- Filter Section (Initially Hidden) -->
         <Frame Grid.Row="1" 
-               x:Name="FilterFrame"
-               IsVisible="False"
-               Margin="15,0,15,10" 
-               Padding="15" 
-               BackgroundColor="White" 
-               CornerRadius="15" 
-               HasShadow="True"
-               BorderColor="#E0E0E0">
+       x:Name="FilterFrame"
+       IsVisible="False"
+       Margin="15,0,15,10" 
+       Padding="15" 
+       BackgroundColor="White" 
+       CornerRadius="15" 
+       HasShadow="True"
+       BorderColor="#E0E0E0">
             <VerticalStackLayout Spacing="12">
                 <Label Text="Filter by Sport" 
-                       FontSize="16" 
-                       FontAttributes="Bold" 
-                       TextColor="#222"/>
+               FontSize="16" 
+               FontAttributes="Bold" 
+               TextColor="#222"/>
 
                 <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
                     <Picker x:Name="SportFilterPicker"
-                            Title="All Sports"
-                            FontSize="14"
-                            TextColor="#333">
+                    Title="All Sports"
+                    FontSize="14"
+                    TextColor="#333">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>All Sports</x:String>
@@ -87,31 +87,32 @@
                     </Picker>
 
                     <Button Grid.Column="1"
-                            Text="Apply"
-                            Command="{Binding FilterEventsBySportCommand}"
-                            CommandParameter="{Binding Source={x:Reference SportFilterPicker}, Path=SelectedItem}"
-                            BackgroundColor="#6C63FF"
-                            TextColor="White"
-                            WidthRequest="90"
-                            HeightRequest="44"
-                            CornerRadius="10"
-                            FontSize="14"
-                            FontAttributes="Bold"/>
+                    Text="Apply"
+                    Command="{Binding FilterEventsBySportCommand}"
+                    CommandParameter="{Binding Source={x:Reference SportFilterPicker}, Path=SelectedItem}"
+                    BackgroundColor="#6C63FF"
+                    TextColor="White"
+                    WidthRequest="90"
+                    HeightRequest="44"
+                    CornerRadius="10"
+                    FontSize="14"
+                    FontAttributes="Bold"/>
 
                     <Button Grid.Column="2"
-                            Text="Clear"
-                            Command="{Binding LoadEventsCommand}"
-                            BackgroundColor="#FF6B6B"
-                            TextColor="White"
-                            WidthRequest="80"
-                            HeightRequest="44"
-                            CornerRadius="10"
-                            FontSize="14"
-                            FontAttributes="Bold"/>
+                    Text="Clear"
+                    Command="{Binding LoadEventsCommand}"
+                    BackgroundColor="#FF6B6B"
+                    TextColor="White"
+                    WidthRequest="80"
+                    HeightRequest="44"
+                    CornerRadius="10"
+                    FontSize="14"
+                    FontAttributes="Bold"/>
                 </Grid>
             </VerticalStackLayout>
         </Frame>
 
+        
         <!-- Events List -->
         <RefreshView Grid.Row="2" 
                      Command="{Binding LoadEventsCommand}" 
@@ -124,88 +125,74 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Margin="0,0,0,12"
-                               Padding="16"
-                               BackgroundColor="White"
-                               BorderColor="#E0E0E0"
-                               CornerRadius="16"
-                               HasShadow="True">
+               Padding="16"
+               BackgroundColor="White"
+               BorderColor="#E0E0E0"
+               CornerRadius="16"
+               HasShadow="True">
 
                             <Grid RowDefinitions="Auto,Auto" 
-                                  RowSpacing="12">
+                  RowSpacing="12">
 
-                                <!-- Top Row: Icon, Details, Capacity -->
-                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
-
-                                    <!-- Sport Icon -->
-                                    <Frame WidthRequest="48" 
-                                           HeightRequest="48"
-                                           BackgroundColor="#FF6B6B"
-                                           CornerRadius="24"
-                                           VerticalOptions="Center"
-                                           Padding="0"
-                                           HasShadow="False">
-                                        <Label Text="⚽"
-                                               HorizontalOptions="Center"
-                                               VerticalOptions="Center"
-                                               FontSize="24"/>
-                                    </Frame>
+                                <!-- Top Row: Details & Capacity (No Icon) -->
+                                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
 
                                     <!-- Event Details -->
-                                    <VerticalStackLayout Grid.Column="1" 
-                                                         Spacing="4" 
-                                                         VerticalOptions="Center">
+                                    <VerticalStackLayout Spacing="4" 
+                                         VerticalOptions="Center">
                                         <Label Text="{Binding Event.Title}" 
-                                               FontSize="18" 
-                                               FontAttributes="Bold" 
-                                               TextColor="#222"
-                                               LineBreakMode="TailTruncation"
-                                               MaxLines="1"/>
-                                        <Label Text="{Binding Event.Address}" 
-                                               FontSize="13" 
-                                               TextColor="#666"
-                                               LineBreakMode="TailTruncation"
-                                               MaxLines="1"/>
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#222"
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="1"/>
+                                                <Label Text="{Binding Event.Address}" 
+                                           FontSize="13" 
+                                           TextColor="#666"
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="1"/>       
                                         <HorizontalStackLayout Spacing="8">
                                             <Label Text="{Binding Event.StartTimeUtc, StringFormat='{0:MMM dd, h:mm tt}'}"
-                                                   FontSize="12" 
-                                                   TextColor="#888"/>
-                                            <Label Text="•" 
-                                                   FontSize="12" 
-                                                   TextColor="#CCC"/>
-                                            <Label Text="{Binding Event.SportType}" 
-                                                   FontSize="12" 
-                                                   TextColor="#888"/>
-                                        </HorizontalStackLayout>
-                                    </VerticalStackLayout>
+                                               FontSize="12" 
+                                               TextColor="#888"/>
+                                                        <Label Text="•" 
+                                               FontSize="12" 
+                                               TextColor="#CCC"/>
+                                                        <Label Text="{Binding Event.SportType}" 
+                                               FontSize="12" 
+                                               TextColor="#6C63FF"
+                                               FontAttributes="Bold"/>
+                                            </HorizontalStackLayout>
+                                        </VerticalStackLayout>
 
                                     <!-- Capacity Badge -->
-                                    <Frame Grid.Column="2"
-                                           BackgroundColor="#6C63FF"
-                                           CornerRadius="12"
-                                           Padding="10,6"
-                                           VerticalOptions="Start"
-                                           HasShadow="False">
-                                        <Label Text="{Binding CapacityDisplay}"
-                                               TextColor="White"
-                                               FontSize="13"
-                                               FontAttributes="Bold"/>
+                                    <Frame Grid.Column="1"
+                                       BackgroundColor="#6C63FF"
+                                       CornerRadius="12"
+                                       Padding="10,6"
+                                       VerticalOptions="Start"
+                                       HasShadow="False">
+                                                    <Label Text="{Binding CapacityDisplay}"
+                                           TextColor="White"
+                                           FontSize="13"
+                                           FontAttributes="Bold"/>
                                     </Frame>
                                 </Grid>
 
                                 <!-- Bottom Row: View Details Button -->
                                 <Button Grid.Row="1"
-                                        Text="View Details"
-                                        BackgroundColor="#6C63FF"
-                                        TextColor="White"
-                                        FontAttributes="Bold"
-                                        CornerRadius="10"
-                                        HeightRequest="44"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:EventsViewModel}},
-                                                          Path=ViewEventDetailsCommand}"
-                                        CommandParameter="{Binding Event}" />
+                                    Text="View Details"
+                                    BackgroundColor="#6C63FF"
+                                    TextColor="White"
+                                    FontAttributes="Bold"
+                                    CornerRadius="10"
+                                    HeightRequest="44"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:EventsViewModel}},
+                                                      Path=ViewEventDetailsCommand}"
+                                    CommandParameter="{Binding Event}" />
 
-                            </Grid>
-                        </Frame>
+                                </Grid>
+                            </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
